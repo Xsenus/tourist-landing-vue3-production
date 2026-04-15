@@ -1,0 +1,39 @@
+{
+  "name": "tourist-landing-vue3-production",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Production-ready Vue 3 landing page built from the provided Figma export",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .ts,.vue --max-warnings=0",
+    "test": "vitest run --pool=forks --poolOptions.forks.singleFork",
+    "test:watch": "vitest --pool=forks --poolOptions.forks.singleFork",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.8",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.2.0"
+  }
+}
