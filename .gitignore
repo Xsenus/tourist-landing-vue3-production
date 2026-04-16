@@ -13,3 +13,4 @@ Thumbs.db
 !.vscode/launch.json
 coverage/
 .codex-temp/
+test-results/
