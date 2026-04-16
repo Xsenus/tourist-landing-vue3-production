@@ -4480,6 +4480,24 @@ button {
   margin-left: 12px;
 }
 
+.mobile-reference-page .mobile-card-section {
+  height: auto;
+  min-height: 1095px;
+  overflow: hidden;
+}
+
+.mobile-reference-page .mobile-card-section .flex-row-c {
+  height: auto;
+  min-height: 214px;
+  overflow: visible;
+}
+
+.mobile-reference-page .mobile-card-section .frame-2f,
+.mobile-reference-page .mobile-card-section .frame-30,
+.mobile-reference-page .mobile-card-section .frame-31 {
+  overflow: visible;
+}
+
 @media (max-width: 360px) {
   .mobile-hero-section .frame-cb {
     left: auto;
