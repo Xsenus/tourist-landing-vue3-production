@@ -2652,6 +2652,47 @@ button {
   z-index: 247;
   border-radius: 19px;
 }
+.desktop-profile-visual-stack {
+  position: absolute;
+  width: 640px;
+  height: 596px;
+  top: 18px;
+  left: 0;
+  z-index: 247;
+  pointer-events: none;
+}
+
+.desktop-profile-screen {
+  position: absolute;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.desktop-profile-screen--left {
+  width: 229px;
+  top: 93px;
+  left: -6px;
+  transform: rotate(-7.8deg);
+  z-index: 1;
+}
+
+.desktop-profile-screen--center {
+  width: 356px;
+  top: 0;
+  left: 137px;
+  z-index: 3;
+}
+
+.desktop-profile-screen--right {
+  width: 228px;
+  top: 91px;
+  right: -8px;
+  transform: rotate(7.8deg);
+  z-index: 2;
+}
+
 .star-75 {
   position: absolute;
   width: 35px;
