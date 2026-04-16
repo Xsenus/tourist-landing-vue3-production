@@ -3,26 +3,20 @@
     <div class="group-72"></div>
     <div class="star-73"></div>
     <div class="desktop-profile-visual-stack" data-design-element="desktop-profile-visual-stack">
-      <img
-        alt=""
-        aria-hidden="true"
-        class="desktop-profile-screen desktop-profile-screen--left"
-        data-design-element="desktop-profile-screen-left"
+      <DesktopReferenceProfileScreenLayer
+        design-element="desktop-profile-screen-left"
         :src="desktopProfileLeftRef"
+        variant="left"
       />
-      <img
-        alt=""
-        aria-hidden="true"
-        class="desktop-profile-screen desktop-profile-screen--center"
-        data-design-element="desktop-profile-screen-center"
+      <DesktopReferenceProfileScreenLayer
+        design-element="desktop-profile-screen-center"
         :src="desktopProfileCenterRef"
+        variant="center"
       />
-      <img
-        alt=""
-        aria-hidden="true"
-        class="desktop-profile-screen desktop-profile-screen--right"
-        data-design-element="desktop-profile-screen-right"
+      <DesktopReferenceProfileScreenLayer
+        design-element="desktop-profile-screen-right"
         :src="desktopProfileRightRef"
+        variant="right"
       />
     </div>
     <div class="star-75"></div>
@@ -33,4 +27,5 @@
 import desktopProfileCenterRef from '@/shared/assets/images/desktop-profile-center-ref.png';
 import desktopProfileLeftRef from '@/shared/assets/images/desktop-profile-left-ref.png';
 import desktopProfileRightRef from '@/shared/assets/images/desktop-profile-right-ref.png';
+import DesktopReferenceProfileScreenLayer from './DesktopReferenceProfileScreenLayer.vue';
 </script>
