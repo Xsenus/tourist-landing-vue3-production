@@ -1,11 +1,11 @@
 <template>
   <div
     id="deals"
-    class="frame-c"
+    class="frame-c mobile-deals-section"
     data-design-element="mobile-deals-section"
     data-figma-node="55:193"
   >
-    <div class="group-d">
+    <div class="group-d" data-design-element="mobile-deals-collage">
       <div class="flex-row">
         <div class="rectangle-e"></div>
         <div class="rectangle-f"></div>
@@ -18,7 +18,7 @@
             <div class="frame-14">
               <span class="boutique-hotel">Boutique Hotel</span>
               <div class="from-night">
-                <span class="from">from </span><span class="euro-from">€89</span><span class="from-15"> /night</span>
+                <span class="from">from </span><span class="euro-from">&euro;89</span><span class="from-15"> /night</span>
               </div>
             </div>
             <div class="frame-16">
@@ -36,7 +36,7 @@
       <div class="group-1b"></div>
     </div>
     <div class="rectangle-1c"></div>
-    <div class="group-1d">
+    <div class="group-1d" data-design-element="mobile-deals-intro">
       <div class="explore-save">
         <span class="frame-1e">EXPLORE &amp; SAVE</span>
         <div class="frame-1f">
@@ -51,7 +51,7 @@
           </span>
         </div>
       </div>
-      <div class="frame-23">
+      <div class="frame-23" data-design-element="mobile-deals-benefits">
         <div class="frame-24">
           <div class="prices-list"></div>
           <div class="frame-25">
@@ -71,11 +71,15 @@
           </div>
         </div>
       </div>
-      <a class="frame-2a" href="#book">
+      <a class="frame-2a" href="#book" data-design-element="mobile-deals-cta">
         <span class="see-how-it-works">See how it works</span>
-        <div class="arrow-2b"></div>
+        <ArrowRightIcon class="arrow-2b" />
       </a>
     </div>
     <div class="vector"></div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

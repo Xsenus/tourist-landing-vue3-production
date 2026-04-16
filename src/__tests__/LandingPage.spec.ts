@@ -40,7 +40,11 @@ describe('LandingPage', () => {
     expect(wrapper.find('[data-figma-node="21:14"]').exists()).toBe(true);
     expect(wrapper.find('[data-design-element="desktop-hero-section"]').exists()).toBe(true);
     expect(wrapper.find('[data-design-element="desktop-card-stats"]').exists()).toBe(true);
+    expect(wrapper.find('button[data-design-element="desktop-language-switch"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="desktop-primary-cta"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="desktop-deals-cta"]').exists()).toBe(true);
     expect(wrapper.findAll('[data-design-element="desktop-country-item"]')).toHaveLength(4);
+    expect(wrapper.find('[data-country="Germany"]').exists()).toBe(true);
   });
 
   it('renders the mobile figma-aligned branch with inspectable hooks', async () => {
@@ -50,6 +54,10 @@ describe('LandingPage', () => {
     expect(wrapper.find('[data-figma-node="46:505"]').exists()).toBe(true);
     expect(wrapper.find('[data-design-element="mobile-header"]').exists()).toBe(true);
     expect(wrapper.find('[data-design-element="mobile-card-section"]').exists()).toBe(true);
+    expect(wrapper.find('button[data-design-element="mobile-language-switch"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="mobile-primary-cta"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="mobile-deals-cta"]').exists()).toBe(true);
     expect(wrapper.findAll('[data-design-element="mobile-country-item"]')).toHaveLength(4);
+    expect(wrapper.find('[data-country="Japan"]').exists()).toBe(true);
   });
 });

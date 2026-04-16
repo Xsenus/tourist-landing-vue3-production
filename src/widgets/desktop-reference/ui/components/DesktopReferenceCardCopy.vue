@@ -1,7 +1,7 @@
 <template>
   <div class="column" data-design-element="desktop-card-copy">
-    <span class="tourist-card">YOUR TOURIST CARD</span>
-    <div class="frame-38">
+    <span class="desktop-card-label">YOUR TOURIST CARD</span>
+    <div class="frame-38" data-design-element="desktop-card-intro">
       <div class="group-39">
         <div class="column-3a">
           <div class="your-perks">
@@ -19,11 +19,11 @@
         Your digital travel profile. Share, connect, <br />and get exclusive member perks <br />everywhere you go.
       </span>
     </div>
-    <a class="frame-3f" href="#identity">
+    <a class="frame-3f" href="#identity" data-design-element="desktop-card-cta">
       <span class="get-card">Get your free card</span>
-      <div class="arrow-40"></div>
+      <ArrowRightIcon class="arrow-40" />
     </a>
-    <div class="frame-41">
+    <div class="frame-41" data-design-element="desktop-card-features">
       <div class="group-42">
         <span class="share-adventures">Share your adventures</span>
         <div class="check-one"></div>
@@ -41,8 +41,12 @@
         <div class="icon-park-solid-check-one"></div>
       </div>
     </div>
-    <span class="more-travel">More travel,</span>
+    <span class="more-travel" data-design-element="desktop-card-tagline">More travel,</span>
     <div class="vector-48"></div>
     <span class="less-cost">less cost</span>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

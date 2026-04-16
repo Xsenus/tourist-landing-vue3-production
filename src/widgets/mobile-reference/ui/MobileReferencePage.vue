@@ -1,20 +1,20 @@
 <template>
-  <div
+  <main
     id="top"
-    class="main-container"
+    class="main-container mobile-reference-page"
     data-design-element="mobile-page"
     data-figma-node="46:505"
     data-layout-mode="mobile"
   >
     <MobileReferenceHeader />
-    <MobileReferenceHeroActions />
+    <MobileReferenceHeroSection />
     <MobileReferenceDealsSection />
     <MobileReferenceCardSection />
     <MobileReferenceBookingSection />
     <MobileReferenceProfileSection />
     <MobileReferenceJourneySection />
     <MobileReferenceFooterSection />
-  </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
@@ -25,7 +25,7 @@ import MobileReferenceCardSection from './components/MobileReferenceCardSection.
 import MobileReferenceDealsSection from './components/MobileReferenceDealsSection.vue';
 import MobileReferenceFooterSection from './components/MobileReferenceFooterSection.vue';
 import MobileReferenceHeader from './components/MobileReferenceHeader.vue';
-import MobileReferenceHeroActions from './components/MobileReferenceHeroActions.vue';
+import MobileReferenceHeroSection from './components/MobileReferenceHeroSection.vue';
 import MobileReferenceJourneySection from './components/MobileReferenceJourneySection.vue';
 import MobileReferenceProfileSection from './components/MobileReferenceProfileSection.vue';
 </script>

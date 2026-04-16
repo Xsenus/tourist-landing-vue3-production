@@ -10,5 +10,5 @@
     <div class="rectangle-4d"></div>
     <div class="rectangle-4e"></div>
   </div>
-  <div class="union"></div>
+  <div class="union" data-design-element="desktop-card-preview-accent"></div>
 </template>

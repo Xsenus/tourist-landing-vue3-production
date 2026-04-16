@@ -14,9 +14,13 @@
         Contact businesses directly. <br />No fees. No commissions. <br />Just transparent prices <br />and real relationships.
       </span>
     </div>
-    <a class="frame-6a" href="#journey">
+    <a class="frame-6a" href="#journey" data-design-element="desktop-booking-cta">
       <span class="see-how-it-works">See how it works</span>
-      <div class="arrow-6b"></div>
+      <ArrowRightIcon class="arrow-6b" />
     </a>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

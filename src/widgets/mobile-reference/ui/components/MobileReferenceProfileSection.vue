@@ -1,13 +1,13 @@
 <template>
   <div
     id="identity"
-    class="frame-60"
+    class="frame-60 mobile-profile-section"
     data-design-element="mobile-profile-section"
     data-figma-node="55:690"
   >
     <div class="rectangle-61"></div>
     <div class="group-62">
-      <div class="frame-63">
+      <div class="frame-63" data-design-element="mobile-profile-intro">
         <div class="group-64">
           <div class="group-65">
             <div class="frame-66">
@@ -26,7 +26,7 @@
           Build a profile that feels like you. Add your style, <br />links, and personality - and connect with travelers <br />who vibe with your journey.
         </span>
       </div>
-      <div class="frame-6a">
+      <div class="frame-6a" data-design-element="mobile-profile-features">
         <div class="group-6b">
           <span class="custom-profile-cover">Custom profile &amp; cover</span>
           <div class="frame-6c"></div>
@@ -44,9 +44,9 @@
           <div class="frame-72"></div>
         </div>
       </div>
-      <a class="frame-73" href="#journey">
+      <a class="frame-73" href="#journey" data-design-element="mobile-profile-cta">
         <span class="create-your-profile">Create Your Profile</span>
-        <div class="arrow-74"></div>
+        <ArrowRightIcon class="arrow-74" />
       </a>
     </div>
     <div class="group-75">
@@ -60,3 +60,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

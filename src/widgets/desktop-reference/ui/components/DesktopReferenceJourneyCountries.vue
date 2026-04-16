@@ -1,10 +1,10 @@
 <template>
   <div class="rectangle-93" data-design-element="desktop-journey-country-list">
-    <a class="frame-94" href="#top">
+    <a class="frame-94" href="#top" data-design-element="desktop-journey-show-all">
       <span class="show-all-countries">Show all countries</span>
-      <div class="arrow-95"></div>
+      <ArrowRightIcon class="arrow-95" />
     </a>
-    <div class="frame-96">
+    <div class="frame-96" data-design-element="desktop-journey-country-stack">
       <DesktopReferenceCountryItem
         wrapper-class="group-97"
         group-class="group-98"
@@ -58,5 +58,6 @@
 </template>
 
 <script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 import DesktopReferenceCountryItem from './DesktopReferenceCountryItem.vue';
 </script>

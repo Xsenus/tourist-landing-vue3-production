@@ -1,9 +1,13 @@
 <template>
-  <div :class="wrapperClass" data-design-element="desktop-country-item">
+  <div :class="wrapperClass" data-design-element="desktop-country-item" :data-country="country">
     <div :class="groupClass">
       <div :class="frameClass">
         <span :class="countryClass">{{ country }}</span>
-        <span :class="citiesClass" v-html="citiesHtml"></span>
+        <span :class="citiesClass">
+          <template v-for="(line, index) in cityLines" :key="`${country}-${index}`">
+            {{ line }}<br v-if="index < cityLines.length - 1" />
+          </template>
+        </span>
       </div>
       <div :class="flagClass"></div>
     </div>
@@ -12,7 +16,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue';
+
+const props = defineProps<{
   wrapperClass: string;
   groupClass: string;
   frameClass: string;
@@ -23,4 +29,6 @@ defineProps<{
   country: string;
   citiesHtml: string;
 }>();
+
+const cityLines = computed(() => props.citiesHtml.split(/<br\s*\/?>/i).map((line) => line.trim()));
 </script>

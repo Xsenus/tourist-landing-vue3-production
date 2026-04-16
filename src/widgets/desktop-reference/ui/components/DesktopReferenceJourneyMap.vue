@@ -4,7 +4,7 @@
       <div class="ellipse-89"></div>
       <div class="ellipse-8a"></div>
       <div class="group-8b"></div>
-      <div class="rectangle-8c">
+      <div class="rectangle-8c" data-design-element="desktop-journey-pin-note">
         <div class="frame-8d">
           <div class="map-pin"></div>
           <div class="frame-8e">
@@ -21,6 +21,6 @@
     <div class="ellipse-91"></div>
     <div class="vector-92"></div>
   </div>
-  <div class="image"></div>
+  <div class="image" data-design-element="desktop-journey-map-art"></div>
   <div class="group-b1"></div>
 </template>

@@ -24,7 +24,8 @@ button {
 .main-container {
   position: relative;
   width: 360px;
-  height: 5835px;
+  height: auto;
+  min-height: 100vh;
   margin: 0 auto;
   background: #f6f6f6;
   overflow: hidden;
@@ -262,6 +263,12 @@ button {
   border: 1px solid #edeef2;
   z-index: 34;
   border-radius: 10px;
+}
+.mobile-hero-section {
+  position: relative;
+  width: 360px;
+  height: 804px;
+  overflow: hidden;
 }
 .see-deals {
   flex-shrink: 0;
@@ -905,6 +912,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/ryRyttqdmM.png)
     no-repeat center;
   background-size: cover;
@@ -1259,6 +1267,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/OrBku6mrWG.png)
     no-repeat center;
   background-size: cover;
@@ -1847,6 +1856,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/P6Ry16you0.png)
     no-repeat center;
   background-size: cover;
@@ -2443,7 +2453,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 18px;
-  height: 0px;
+  height: 18px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/LKFGf2mde6.png)
     no-repeat center;
   background-size: cover;
@@ -3180,7 +3190,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 18px;
-  height: 0px;
+  height: 18px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/2H3vTN03rJ.png)
     no-repeat center;
   background-size: cover;
@@ -4245,4 +4255,645 @@ button {
     no-repeat center;
   background-size: cover;
   z-index: 360;
+}
+.mobile-hero-section .frame-bf {
+  top: 18px;
+  left: 12px;
+}
+
+.mobile-hero-section .group-ca {
+  top: 54px;
+  left: 273px;
+}
+
+.mobile-hero-section .frame-9 {
+  position: relative;
+  margin-top: 219px;
+}
+
+.mobile-hero-section .frame-cb {
+  top: 335px;
+  left: 205px;
+  width: 143px;
+}
+
+.mobile-hero-section .frame-d3 {
+  top: 344px;
+}
+
+.mobile-hero-section .frame-d4 {
+  top: 422px;
+}
+
+.mobile-hero-section .frame-e1 {
+  top: 723px;
+}
+
+.mobile-hero-section .vector-e2 {
+  top: 733.211px;
+}
+
+.mobile-footer-section {
+  position: relative;
+  width: 360px;
+  min-height: 380px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.mobile-footer-surface {
+  margin: 0;
+}
+
+.frame-c {
+  margin-top: 12px;
+}
+
+.frame-23 {
+  justify-content: space-between;
+  gap: 0;
+  width: 336px;
+}
+
+.frame-24,
+.frame-25 {
+  width: 88px;
+}
+
+.frame-26,
+.frame-27 {
+  width: 98px;
+}
+
+.frame-28,
+.frame-29 {
+  width: 104px;
+}
+
+.unforgettable,
+.experiences {
+  font-size: 12px;
+  line-height: 18px;
+  white-space: normal;
+}
+
+.your-perks-your-way {
+  width: 320px;
+  font-size: 34px;
+  line-height: 33px;
+  white-space: normal;
+}
+
+.your-perks,
+.your-way {
+  font-size: 34px;
+  line-height: 33px;
+}
+
+.your-digital-travel-profile,
+.build-a-profile {
+  width: 320px;
+  height: auto;
+}
+
+.group-62 {
+  height: 472px;
+}
+
+.group-64 {
+  height: 182px;
+}
+
+.group-69 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 336px;
+  height: auto;
+  margin-top: 2px;
+}
+
+.mdi-heart {
+  margin: 0 0 0 auto;
+}
+
+.make-it-yours {
+  width: 314px;
+  height: auto;
+  margin: 0;
+  line-height: 29px;
+  white-space: normal;
+}
+
+.mobile-hero-section .travelers {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.mobile-hero-section .exploring {
+  font-size: 13px;
+}
+
+.mobile-language-trigger {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.mobile-language-trigger .en {
+  top: 0;
+  left: 0;
+}
+
+.mobile-language-trigger .chevron-down {
+  top: 1px;
+  left: 18px;
+}
+
+.main-container a:focus-visible,
+.main-container button:focus-visible {
+  outline: 2px solid #f35e22;
+  outline-offset: 2px;
+}
+
+.mobile-reference-page {
+  width: 100%;
+  max-width: 360px;
+}
+
+.mobile-reference-page .mobile-hero-section,
+.mobile-reference-page .mobile-deals-section,
+.mobile-reference-page .mobile-card-section,
+.mobile-reference-page .mobile-booking-section,
+.mobile-reference-page .mobile-profile-section,
+.mobile-reference-page .mobile-journey-section,
+.mobile-reference-page .mobile-footer-section {
+  width: 100%;
+  max-width: 360px;
+}
+
+.mobile-reference-page .frame-d4,
+.mobile-reference-page .rectangle-1c,
+.mobile-reference-page .mobile-card-section,
+.mobile-reference-page .mobile-booking-section,
+.mobile-reference-page .rectangle-61,
+.mobile-reference-page .mobile-journey-section,
+.mobile-reference-page .mobile-footer-surface,
+.mobile-reference-page .frame-b2 {
+  width: 100%;
+}
+
+.mobile-reference-page .frame,
+.mobile-reference-page .group,
+.mobile-reference-page .group-6,
+.mobile-reference-page .frame-bf,
+.mobile-reference-page .exclusive-deals,
+.mobile-reference-page .group-1d,
+.mobile-reference-page .frame-2f,
+.mobile-reference-page .frame-30,
+.mobile-reference-page .frame-32,
+.mobile-reference-page .frame-3c,
+.mobile-reference-page .flex-row-b,
+.mobile-reference-page .frame-58,
+.mobile-reference-page .group-62,
+.mobile-reference-page .group-64,
+.mobile-reference-page .group-65,
+.mobile-reference-page .frame-63,
+.mobile-reference-page .frame-66,
+.mobile-reference-page .frame-67,
+.mobile-reference-page .frame-6a,
+.mobile-reference-page .frame-7d,
+.mobile-reference-page .frame-7f,
+.mobile-reference-page .frame-81,
+.mobile-reference-page .rectangle-85,
+.mobile-reference-page .rectangle-9c,
+.mobile-reference-page .rectangle-ab {
+  width: calc(100% - 24px);
+  max-width: 336px;
+}
+
+.mobile-reference-page .rectangle-9c,
+.mobile-reference-page .rectangle-ab {
+  margin-left: 12px;
+}
+
+@media (max-width: 360px) {
+  .mobile-hero-section .frame-cb {
+    left: auto;
+    right: 10px;
+    width: 131px;
+  }
+
+  .mobile-hero-section .travelers {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .mobile-hero-section .exploring {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .mobile-hero-section .frame-cd {
+    width: 98px;
+    gap: 3px;
+  }
+
+  .mobile-hero-section .star-ce,
+  .mobile-hero-section .star-cf,
+  .mobile-hero-section .star-d0,
+  .mobile-hero-section .star-d1,
+  .mobile-hero-section .star-d2 {
+    width: 17px;
+    height: 17px;
+  }
+
+  .group-1d {
+    width: 320px;
+    left: 10px;
+  }
+
+  .frame-23 {
+    width: 320px;
+    justify-content: space-between;
+  }
+
+  .frame-24,
+  .frame-25 {
+    width: 88px;
+  }
+
+  .frame-26,
+  .frame-27 {
+    width: 98px;
+  }
+
+  .frame-28,
+  .frame-29 {
+    width: 104px;
+  }
+
+  .better-prices,
+  .hidden-gems,
+  .unforgettable {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .every-time,
+  .only-locals-know,
+  .experiences {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .your-perks-your-way {
+    width: 320px;
+    font-size: 34px;
+    line-height: 33px;
+  }
+
+  .your-perks,
+  .your-way {
+    font-size: 34px;
+    line-height: 33px;
+  }
+
+  .flex-row-b {
+    width: 320px;
+  }
+
+  .rectangle-44 {
+    width: 150px;
+  }
+
+  .frame-45,
+  .frame-46 {
+    width: 132px;
+  }
+
+  .group-47 {
+    left: 170px;
+    width: 150px;
+  }
+
+  .frame-48,
+  .frame-4a,
+  .frame-4b {
+    width: 132px;
+  }
+
+  .member-perks {
+    font-size: 15px;
+  }
+
+  .only-for-card-holders {
+    font-size: 13px;
+    line-height: 18px;
+    white-space: normal;
+  }
+
+  .and-more {
+    margin-left: 44px;
+  }
+
+  .plus-k-friends {
+    left: 92px;
+  }
+
+  .rectangle-9c,
+  .rectangle-ab {
+    width: 336px;
+    margin-left: 12px;
+  }
+
+  .frame-9d {
+    width: 304px;
+    margin-left: 16px;
+    gap: 16px;
+  }
+
+  .frame-9e {
+    gap: 16px;
+    width: 152px;
+  }
+
+  .frame-a4 {
+    width: 128px;
+  }
+
+  .frame-ac {
+    width: 304px;
+    margin-left: 16px;
+  }
+
+  .frame-ad {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mobile-reference-page .mobile-hero-section .frame-cb {
+    left: auto;
+    right: 10px;
+    top: 336px;
+    width: 131px;
+  }
+
+  .mobile-reference-page .mobile-hero-section .frame-cc {
+    gap: 0;
+  }
+
+  .mobile-reference-page .mobile-hero-section .travelers {
+    display: block;
+    width: 100%;
+    height: 26px;
+    font-size: 15px;
+    line-height: 23px;
+    white-space: nowrap;
+  }
+
+  .mobile-reference-page .mobile-hero-section .exploring {
+    display: block;
+    width: 100%;
+    height: 22px;
+    font-size: 13px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  .mobile-reference-page .mobile-hero-section .frame-cd {
+    width: 98px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .group-1d {
+    width: calc(100% - 24px);
+    left: 12px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-23 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-24,
+  .mobile-reference-page .mobile-deals-section .frame-26,
+  .mobile-reference-page .mobile-deals-section .frame-28 {
+    gap: 8px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-24,
+  .mobile-reference-page .mobile-deals-section .frame-26,
+  .mobile-reference-page .mobile-deals-section .frame-28 {
+    width: auto;
+    min-width: 0;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-24,
+  .mobile-reference-page .mobile-deals-section .frame-25 {
+    width: 88px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-26,
+  .mobile-reference-page .mobile-deals-section .frame-27 {
+    width: 98px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .frame-28,
+  .mobile-reference-page .mobile-deals-section .frame-29 {
+    width: 104px;
+  }
+
+  .mobile-reference-page .mobile-deals-section .better-prices,
+  .mobile-reference-page .mobile-deals-section .hidden-gems,
+  .mobile-reference-page .mobile-deals-section .unforgettable {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .mobile-reference-page .mobile-deals-section .every-time,
+  .mobile-reference-page .mobile-deals-section .only-locals-know,
+  .mobile-reference-page .mobile-deals-section .experiences {
+    display: block;
+    width: 100%;
+    font-size: 11px;
+    line-height: 17px;
+    white-space: nowrap;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-2f {
+    width: calc(100% - 24px);
+    max-width: 320px;
+    height: auto;
+    min-height: 214px;
+  }
+
+  .mobile-reference-page .mobile-card-section .flex-row-c {
+    height: auto;
+    min-height: 214px;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-30 {
+    gap: 16px;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-31 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-30 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .mobile-reference-page .mobile-card-section .your-journey {
+    width: 100%;
+    height: auto;
+    white-space: normal;
+  }
+
+  .mobile-reference-page .mobile-card-section .your-perks-your-way {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    font-size: 33px;
+    line-height: 32px;
+    white-space: normal;
+  }
+
+  .mobile-reference-page .mobile-card-section .your-perks,
+  .mobile-reference-page .mobile-card-section .your-way {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .mobile-reference-page .mobile-card-section .your-digital-travel-profile {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 44px;
+    line-height: 21px;
+    white-space: normal;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-3c {
+    width: calc(100% - 24px);
+    max-width: 336px;
+  }
+
+  .mobile-reference-page .mobile-card-section .flex-row-b {
+    display: block;
+    width: 336px;
+    height: 184px;
+  }
+
+  .mobile-reference-page .mobile-card-section .rectangle-44,
+  .mobile-reference-page .mobile-card-section .group-47,
+  .mobile-reference-page .mobile-card-section .frame-51 {
+    position: absolute;
+  }
+
+  .mobile-reference-page .mobile-card-section .rectangle-44 {
+    width: 158px;
+    left: 0;
+  }
+
+  .mobile-reference-page .mobile-card-section .group-47 {
+    width: 158px;
+    left: 178px;
+  }
+
+  .mobile-reference-page .mobile-card-section .frame-51 {
+    top: 130px;
+    left: 0;
+    margin-top: 0;
+  }
+
+  .mobile-reference-page .mobile-card-section .plus-k-friends {
+    position: absolute;
+    top: 137px;
+    left: 98px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .mobile-reference-page .mobile-journey-section .frame-9d {
+    width: calc(100% - 24px);
+    margin: 11px 12px 0;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .mobile-reference-page .mobile-journey-section .frame-9e,
+  .mobile-reference-page .mobile-journey-section .frame-a4 {
+    width: auto;
+    gap: 14px;
+  }
+
+  .mobile-reference-page .mobile-journey-section .frame-ac {
+    width: calc(100% - 24px);
+    margin: 13px 12px 0;
+  }
+
+.mobile-reference-page .mobile-journey-section .travelers-sharing-journey {
+    width: 100%;
+  }
+}
+
+.arrow-2b,
+.arrow-3b,
+.arrow-57,
+.arrow-74,
+.arrow-9b {
+  display: inline-block;
+  flex: 0 0 auto;
+  position: relative;
+  width: 16px !important;
+  height: 15px !important;
+  background: none !important;
+  overflow: visible;
+}
+
+.arrow-2b::before,
+.arrow-3b::before,
+.arrow-57::before,
+.arrow-74::before,
+.arrow-9b::before {
+  content: none;
+}
+
+.arrow-2b::after,
+.arrow-3b::after,
+.arrow-57::after,
+.arrow-74::after,
+.arrow-9b::after {
+  content: none;
+}
+
+.arrow-2b {
+  color: #20b684;
+}
+
+.arrow-3b {
+  color: #f85e27;
+}
+
+.arrow-57,
+.arrow-9b {
+  color: #1370e4;
+}
+
+.arrow-74 {
+  color: #ffffff;
 }

@@ -1,11 +1,11 @@
 <template>
   <div
     id="journey"
-    class="rectangle-7c"
+    class="rectangle-7c mobile-journey-section"
     data-design-element="mobile-journey-section"
     data-figma-node="58:1023"
   >
-    <div class="frame-7d">
+    <div class="frame-7d" data-design-element="mobile-journey-intro">
       <span class="your-journey-7e">YOUR JOURNEY</span>
       <div class="frame-7f">
         <div class="frame-80">
@@ -14,7 +14,7 @@
         <span class="pin-countries-cities">Pin the countries and cities you've visited. <br />Track your journey and inspire others.</span>
       </div>
     </div>
-    <div class="frame-81">
+    <div class="frame-81" data-design-element="mobile-journey-tasks">
       <div class="frame-82">
         <div class="mingcute-earth-line"></div>
         <span class="mark-countries-visited">Mark countries you've visited</span>
@@ -28,8 +28,8 @@
         <span class="watch-map-grow">Watch your map grow</span>
       </div>
     </div>
-    <div class="rectangle-85">
-      <div class="frame-86">
+    <div class="rectangle-85" data-design-element="mobile-journey-country-list">
+      <div class="frame-86" data-design-element="mobile-journey-country-stack">
         <MobileReferenceCountryItem
           wrapper-class="group-87"
           group-class="group-88"
@@ -78,12 +78,12 @@
           cities-html="New York, Los Angeles, Miami, <br />and 4 more"
         />
       </div>
-      <a class="frame-9a" href="#top">
+      <a class="frame-9a" href="#top" data-design-element="mobile-journey-show-all">
         <span class="show-all-countries">Show all countries</span>
-        <div class="arrow-9b"></div>
+        <ArrowRightIcon class="arrow-9b" />
       </a>
     </div>
-    <div class="rectangle-9c">
+    <div class="rectangle-9c" data-design-element="mobile-journey-counts-card">
       <div class="frame-9d">
         <div class="frame-9e">
           <div class="group-9f">
@@ -109,7 +109,7 @@
         </div>
       </div>
     </div>
-    <div class="rectangle-ab">
+    <div class="rectangle-ab" data-design-element="mobile-journey-travelers-card">
       <div class="frame-ac">
         <div class="frame-ad">
           <div class="frame-ae">
@@ -122,12 +122,12 @@
         <span class="travelers-sharing-journey">Travelers are exploring the world and sharing their journey</span>
       </div>
     </div>
-    <div class="frame-b2">
+    <div class="frame-b2" data-design-element="mobile-journey-map">
       <div class="empty"></div>
       <div class="ellipse-b3"></div>
       <div class="group-b4"></div>
       <div class="ellipse-b5"></div>
-      <div class="group-b6">
+      <div class="group-b6" data-design-element="mobile-journey-pin-note">
         <div class="frame-b7">
           <div class="map-pin"></div>
           <div class="frame-b8">
@@ -145,5 +145,6 @@
 </template>
 
 <script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 import MobileReferenceCountryItem from './MobileReferenceCountryItem.vue';
 </script>

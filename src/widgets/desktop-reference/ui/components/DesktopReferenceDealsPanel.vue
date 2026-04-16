@@ -1,13 +1,13 @@
 <template>
   <div id="deals" class="rectangle-1a" data-design-element="desktop-deals-panel">
-    <div class="frame-1b">
+    <div class="frame-1b" data-design-element="desktop-deals-collage">
       <div class="rectangle-1c"></div>
       <div class="rectangle-1d"></div>
       <div class="rectangle-1e"></div>
       <div class="rectangle-1f"></div>
     </div>
     <span class="explore-save">EXPLORE &amp; SAVE</span>
-    <div class="frame-20">
+    <div class="frame-20" data-design-element="desktop-deals-intro">
       <div class="group-21">
         <div class="group-22">
           <div class="handpicked-deals">
@@ -26,7 +26,7 @@
     <div class="group-26"></div>
     <div class="group-27"></div>
     <div class="rectangle-28"><span class="minus-20">-20%</span></div>
-    <div class="rectangle-29">
+    <div class="rectangle-29" data-design-element="desktop-deals-offer-card">
       <div class="frame-2a">
         <span class="boutique-hotel">Boutique Hotel</span>
         <div class="from-night">
@@ -38,7 +38,7 @@
         <span class="rating">4.9 (128)</span>
       </div>
     </div>
-    <div class="frame-2d">
+    <div class="frame-2d" data-design-element="desktop-deals-benefits">
       <div class="frame-2e">
         <div class="price-list"></div>
         <div class="frame-2f">
@@ -61,10 +61,14 @@
         </div>
       </div>
     </div>
-    <div class="group-34"></div>
-    <a class="frame-35" href="#book">
+    <div class="group-34" data-design-element="desktop-deals-note"></div>
+    <a class="frame-35" href="#book" data-design-element="desktop-deals-cta">
       <span class="how-it-works">See how it works</span>
-      <div class="arrow-36"></div>
+      <ArrowRightIcon class="arrow-36" />
     </a>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

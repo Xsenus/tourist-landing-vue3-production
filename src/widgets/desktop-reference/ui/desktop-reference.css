@@ -1380,6 +1380,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/pYrq5mPzEm.png)
     no-repeat center;
   background-size: cover;
@@ -1403,11 +1404,11 @@ button {
   font-size: 0px;
   z-index: 193;
 }
-.tourist-card {
+.desktop-card-label {
   display: block;
   position: relative;
   height: 26px;
-  margin: 0 0 0 1px;
+  margin: 0;
   color: #f85e27;
   font-family: Heebo, var(--default-font-family);
   font-size: 16px;
@@ -1425,7 +1426,7 @@ button {
   gap: 8px;
   position: relative;
   width: 452px;
-  margin: 0 0 0 1px;
+  margin: 0;
   z-index: 119;
 }
 .group-39 {
@@ -1569,6 +1570,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/gtuwpsOPwU.png)
     no-repeat center;
   background-size: cover;
@@ -1584,7 +1586,7 @@ button {
   width: 248px;
   height: 149px;
   top: 262px;
-  left: 1px;
+  left: 0;
   z-index: 127;
 }
 .group-42 {
@@ -2487,6 +2489,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 15px;
+  height: 15px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/KF7KxQTSkw.png)
     no-repeat center;
   background-size: cover;
@@ -2997,7 +3000,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 18px;
-  height: 0px;
+  height: 18px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/Hts26xBKGU.png)
     no-repeat center;
   background-size: cover;
@@ -3266,7 +3269,7 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 18px;
-  height: 0px;
+  height: 18px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/aADmzMJMC4.png)
     no-repeat center;
   background-size: cover;
@@ -4209,4 +4212,83 @@ button {
   z-index: 357;
   border-radius: 21px;
   box-shadow: -2px 12px 26px 0 rgba(230, 239, 251, 0.1);
+}
+.desktop-footer-section {
+  position: relative;
+}
+.desktop-language-trigger {
+  position: absolute;
+  width: 58px;
+  height: 29px;
+  top: 31px;
+  left: 520px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+  z-index: 116;
+}
+
+.desktop-language-trigger .en {
+  top: 0;
+  left: 0;
+}
+
+.desktop-language-trigger .chevron-down {
+  top: 4px;
+  left: 26px;
+}
+
+.main-container a:focus-visible,
+.main-container button:focus-visible {
+  outline: 2px solid #f35e22;
+  outline-offset: 2px;
+}
+
+.arrow-36,
+.arrow-40,
+.arrow-6b,
+.arrow-85,
+.arrow-95 {
+  display: inline-block;
+  flex: 0 0 auto;
+  position: relative;
+  width: 16px !important;
+  height: 15px !important;
+  background: none !important;
+  overflow: visible;
+}
+
+.arrow-36::before,
+.arrow-40::before,
+.arrow-6b::before,
+.arrow-85::before,
+.arrow-95::before {
+  content: none;
+}
+
+.arrow-36::after,
+.arrow-40::after,
+.arrow-6b::after,
+.arrow-85::after,
+.arrow-95::after {
+  content: none;
+}
+
+.arrow-36 {
+  color: #20b684;
+}
+
+.arrow-40 {
+  color: #f85e27;
+}
+
+.arrow-6b,
+.arrow-95 {
+  color: #1370e4;
+}
+
+.arrow-85 {
+  color: #ffffff;
 }

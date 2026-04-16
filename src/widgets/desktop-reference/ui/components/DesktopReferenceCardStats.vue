@@ -1,7 +1,7 @@
 <template>
   <div class="flex-column-ab" data-design-element="desktop-card-stats">
     <div class="group-4f"></div>
-    <div class="rectangle-50">
+    <div class="rectangle-50" data-design-element="desktop-card-saved-badge">
       <div class="frame-51">
         <div class="iconamoon-shield-yes-fill-52"></div>
         <div class="frame-53">
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="rectangle-55">
+    <div class="rectangle-55" data-design-element="desktop-card-perks-badge">
       <div class="frame-56">
         <div class="mdi-present-57"></div>
         <div class="frame-58">
@@ -39,7 +39,7 @@
       </div>
       <span class="and-more">&amp; more</span>
     </div>
-    <div class="frame-60">
+    <div class="frame-60" data-design-element="desktop-card-friends-strip">
       <div class="avatar-image"></div>
       <div class="avatar-image-61"></div>
       <div class="avatar-image-62"></div>

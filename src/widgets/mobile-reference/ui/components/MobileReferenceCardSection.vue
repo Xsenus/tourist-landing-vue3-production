@@ -1,11 +1,11 @@
 <template>
   <div
     id="card"
-    class="rectangle-2c"
+    class="rectangle-2c mobile-card-section"
     data-design-element="mobile-card-section"
     data-figma-node="55:463"
   >
-    <div class="flex-row-c">
+    <div class="flex-row-c" data-design-element="mobile-card-intro">
       <div class="vector-2d"></div>
       <div class="vector-2e"></div>
       <div class="frame-2f">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="frame-32">
+    <div class="frame-32" data-design-element="mobile-card-features">
       <div class="group-33">
         <div class="check-one"></div>
         <span class="share-your-adventures">Share your adventures</span>
@@ -41,11 +41,11 @@
         <span class="save-on-every-trip">Save on every trip</span>
       </div>
     </div>
-    <a class="frame-3a" href="#identity">
+    <a class="frame-3a" href="#identity" data-design-element="mobile-card-cta">
       <span class="get-your-free-card">Get your free card</span>
-      <div class="arrow-3b"></div>
+      <ArrowRightIcon class="arrow-3b" />
     </a>
-    <div class="frame-3c">
+    <div class="frame-3c" data-design-element="mobile-card-preview">
       <div class="rectangle-3d"></div>
       <div class="rectangle-3e"></div>
       <span class="tourist-com-alex">tourist.com/Alex</span><span class="countries">Countries</span><span class="cities">Cities</span><span class="trips">Trips</span>
@@ -53,7 +53,7 @@
       <div class="rectangle-40"></div>
       <div class="rectangle-41"></div>
     </div>
-    <div class="flex-row-a">
+    <div class="flex-row-a" data-design-element="mobile-card-tagline">
       <div class="union"></div>
       <span class="more-travel">More travel,</span>
       <div class="vector-42"></div>
@@ -61,15 +61,15 @@
       <div class="group-43"></div>
     </div>
     <div class="flex-row-b">
-      <div class="rectangle-44">
+      <div class="rectangle-44" data-design-element="mobile-card-saved-badge">
         <div class="frame-45">
           <div class="shield-yes-fill"></div>
           <div class="frame-46">
-            <span class="saved-1-240">Saved €1,240</span><span class="on-stays-tours">on stays &amp; tours</span>
+            <span class="saved-1-240">Saved &euro;1,240</span><span class="on-stays-tours">on stays &amp; tours</span>
           </div>
         </div>
       </div>
-      <div class="group-47">
+      <div class="group-47" data-design-element="mobile-card-perks-badge">
         <div class="frame-48">
           <div class="shield-yes-fill-49"></div>
           <div class="frame-4a">
@@ -92,7 +92,7 @@
         </div>
         <span class="and-more">&amp; more</span>
       </div>
-      <div class="frame-51">
+      <div class="frame-51" data-design-element="mobile-card-friends-strip">
         <div class="avatar-image"></div>
         <div class="avatar-image-52"></div>
         <div class="avatar-image-53"></div>
@@ -101,3 +101,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>

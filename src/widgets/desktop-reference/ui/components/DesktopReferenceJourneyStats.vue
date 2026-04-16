@@ -1,5 +1,5 @@
 <template>
-  <div class="rectangle-b2" data-design-element="desktop-journey-stats">
+  <div class="rectangle-b2" data-design-element="desktop-journey-counts-card">
     <div class="frame-b3">
       <div class="group-b4">
         <div class="group-b5">
@@ -23,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div class="rectangle-bf" data-design-element="desktop-journey-travelers">
+  <div class="rectangle-bf" data-design-element="desktop-journey-travelers-card">
     <div class="frame-c0">
       <div class="frame-c1">
         <div class="frame-c2">

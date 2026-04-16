@@ -11,7 +11,7 @@
     <DesktopReferenceBookingSection />
     <DesktopReferenceProfileSection />
     <DesktopReferenceJourneySection />
-    <div class="rectangle-c6"></div>
+    <DesktopReferenceFooterSection />
   </main>
 </template>
 
@@ -20,6 +20,7 @@ import './desktop-reference.css';
 
 import DesktopReferenceBookingSection from './DesktopReferenceBookingSection.vue';
 import DesktopReferenceCardSection from './DesktopReferenceCardSection.vue';
+import DesktopReferenceFooterSection from './DesktopReferenceFooterSection.vue';
 import DesktopReferenceHeroSection from './DesktopReferenceHeroSection.vue';
 import DesktopReferenceJourneySection from './DesktopReferenceJourneySection.vue';
 import DesktopReferenceProfileSection from './DesktopReferenceProfileSection.vue';

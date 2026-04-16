@@ -17,11 +17,11 @@
   <div class="vector-d"></div>
   <div class="vector-e"></div>
   <div class="frame-f" data-design-element="desktop-hero-actions">
-    <a class="frame-10" href="#deals">
+    <a class="frame-10" href="#deals" data-design-element="desktop-primary-cta">
       <span class="join-tourist-for-free">Join Tourist for Free</span>
       <div class="arrow"></div>
     </a>
-    <a class="frame-11" href="#deals">
+    <a class="frame-11" href="#deals" data-design-element="desktop-secondary-cta">
       <span class="see-deals">See deals</span>
       <div class="polygon"></div>
     </a>

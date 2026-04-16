@@ -1,7 +1,7 @@
 <template>
   <div class="flex-column-c" data-design-element="desktop-profile-copy">
     <span class="your-profile">YOUR PROFILE</span>
-    <div class="frame-76">
+    <div class="frame-76" data-design-element="desktop-profile-intro">
       <div class="group-77">
         <div class="group-78">
           <span class="your-journey-79">Your journey.</span>
@@ -16,7 +16,7 @@
         Build a profile that feels like you. Add your style, <br />links, and personality - and connect with travelers <br />who vibe with your journey.
       </span>
     </div>
-    <div class="frame-7b">
+    <div class="frame-7b" data-design-element="desktop-profile-features">
       <div class="group-7c">
         <span class="custom-profile-cover">Custom profile &amp; cover</span>
         <div class="gg-check-o"></div>
@@ -35,10 +35,14 @@
       </div>
     </div>
     <div class="star-83"></div>
-    <a class="frame-84" href="#journey">
+    <a class="frame-84" href="#journey" data-design-element="desktop-profile-cta">
       <span class="create-your-profile">Create Your Profile</span>
-      <div class="arrow-85"></div>
+      <ArrowRightIcon class="arrow-85" />
     </a>
     <div class="group-86"></div>
   </div>
 </template>
+
+<script setup lang="ts">
+import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
+</script>
