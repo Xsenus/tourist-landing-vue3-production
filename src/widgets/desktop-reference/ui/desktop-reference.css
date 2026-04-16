@@ -2824,38 +2824,7 @@ button {
   top: 18px;
   left: 0;
   z-index: 247;
-  pointer-events: none;
-}
-
-.desktop-profile-screen {
-  position: absolute;
-  display: block;
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-}
-
-.desktop-profile-screen--left {
-  width: 229px;
-  top: 93px;
-  left: -6px;
-  transform: rotate(-7.8deg);
-  z-index: 1;
-}
-
-.desktop-profile-screen--center {
-  width: 356px;
-  top: 0;
-  left: 137px;
-  z-index: 3;
-}
-
-.desktop-profile-screen--right {
-  width: 228px;
-  top: 91px;
-  right: -8px;
-  transform: rotate(7.8deg);
-  z-index: 2;
+  overflow: visible;
 }
 
 .star-75 {
@@ -3440,10 +3409,9 @@ button {
   left: 806px;
   overflow: hidden;
   isolation: isolate;
-  background: rgba(245, 246, 250, 0.96);
+  background: #f5f6fa;
   z-index: 318;
   border-radius: 19px;
-  backdrop-filter: blur(8px);
   box-shadow: 0 10px 23px 0 rgba(88, 152, 253, 0.1);
 }
 .frame-94 {
@@ -3894,13 +3862,14 @@ button {
   position: absolute;
   width: 78px;
   height: 78px;
-  top: 213px;
-  left: 61px;
+  top: 247px;
+  left: 867px;
   background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2026-04-15/JZEGXp02w3.png)
     no-repeat center;
   background-size: cover;
-  z-index: 262;
+  z-index: 317;
   border-radius: 50%;
+  pointer-events: none;
 }
 .frame-ab {
   display: flex;

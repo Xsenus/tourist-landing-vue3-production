@@ -7,6 +7,7 @@
   >
     <DesktopReferenceJourneyIntro />
     <DesktopReferenceJourneyMap />
+    <div class="ellipse-aa" data-design-element="desktop-journey-country-bubble"></div>
     <DesktopReferenceJourneyCountries />
     <DesktopReferenceJourneyStats />
   </div>

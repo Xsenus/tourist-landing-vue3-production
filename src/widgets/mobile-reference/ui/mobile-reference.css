@@ -2503,6 +2503,7 @@ button {
   top: 46px;
   left: 0;
   z-index: 249;
+  overflow: visible;
 }
 .group-79 {
   position: relative;
@@ -2764,11 +2765,10 @@ button {
   width: 336px;
   height: 493px;
   margin: 21px 0 0 12px;
-  background: rgba(245, 246, 250, 0.9);
+  background: #f5f6fa;
   z-index: 276;
-  overflow: visible auto;
+  overflow: hidden;
   border-radius: 10px;
-  backdrop-filter: blur(2.4px);
   box-shadow: 0 10px 23px 0 rgba(88, 152, 253, 0.1);
 }
 .frame-86 {

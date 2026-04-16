@@ -53,7 +53,6 @@
         cities-html="New York, Los Angeles, <br />Miami, and 4 more"
       />
     </div>
-    <div class="ellipse-aa"></div>
   </div>
 </template>
 

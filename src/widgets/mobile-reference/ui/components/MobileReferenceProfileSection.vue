@@ -53,7 +53,13 @@
       <div class="flex-row-fbe">
         <div class="group-76"></div>
         <div class="star-77"></div>
-        <div class="group-78"><div class="group-79"></div></div>
+        <div class="group-78">
+          <ReferenceProfileCardStack
+            design-element="mobile-profile-screen-stack"
+            prefix="mobile-profile-screen"
+            variant="mobile"
+          />
+        </div>
       </div>
       <div class="star-7a"></div>
       <div class="group-7b"></div>
@@ -62,5 +68,6 @@
 </template>
 
 <script setup lang="ts">
+import ReferenceProfileCardStack from '@/entities/identity/ui/ReferenceProfileCardStack.vue';
 import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 </script>
