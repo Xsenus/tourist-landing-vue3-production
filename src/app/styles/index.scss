@@ -758,9 +758,7 @@ button {
 }
 
 .phone-mockup__screen--map {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(245, 250, 255, 0.72) 100%),
-    linear-gradient(135deg, rgba(60, 120, 238, 0.14), rgba(38, 178, 123, 0.08));
+  background: linear-gradient(180deg, #f8fbff 0%, #eef5fb 100%);
 }
 
 .phone-mockup__screen--ghost::before,
@@ -800,10 +798,10 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  filter: saturate(0.45) brightness(1.18) contrast(0.88) hue-rotate(165deg);
-  transform: scale(1.24);
-  opacity: 0.95;
+  object-position: left center;
+  filter: none;
+  transform: none;
+  opacity: 1;
 }
 
 .phone-mockup__frame {
@@ -822,62 +820,72 @@ button {
   right: 8.5%;
   top: 12.5%;
   width: min(28.5%, 272px);
-  padding: 18px 18px 16px;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 18px 20px;
   border-radius: 26px;
   color: #ffffff;
   background: linear-gradient(180deg, #22c48a 0%, #0f8c5d 100%);
+  border: 4px solid #1b252b;
   box-shadow: var(--shadow-lg);
   transform: rotate(7deg);
   z-index: 2;
+  overflow: hidden;
 }
 
 .tourist-card::before {
   content: "";
   position: absolute;
-  inset: 1px;
+  inset: 0;
   border-radius: inherit;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), transparent 30%);
   pointer-events: none;
 }
 
-.tourist-card__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
+.tourist-card__label {
   position: relative;
   z-index: 1;
-}
-
-.tourist-card__label {
+  width: 100%;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  text-align: left;
-  opacity: 0.72;
+  text-align: right;
+  opacity: 0.88;
 }
 
 .tourist-card__avatar {
-  width: 70px;
-  height: 70px;
-  margin: 0;
+  position: relative;
+  z-index: 1;
+  width: 98px;
+  height: 98px;
+  margin: 18px 0 0 12px;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.58);
+  border: 0;
   object-fit: cover;
-  box-shadow: 0 10px 22px rgba(8, 29, 20, 0.16);
+  object-position: center;
+  box-shadow: 0 10px 22px rgba(8, 29, 20, 0.12);
+}
+
+.tourist-card__identity {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+  padding-left: 8px;
 }
 
 .tourist-card__name {
-  margin-top: 8px;
-  font-size: 24px;
+  margin-top: 0;
+  font-size: 23px;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.02;
   letter-spacing: -0.04em;
 }
 
 .tourist-card__handle {
-  margin-top: 4px;
-  font-size: 13px;
+  margin-top: 6px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.01em;
   opacity: 0.9;
@@ -885,44 +893,45 @@ button {
 
 .tourist-card__qr {
   position: relative;
-  width: 118px;
-  height: 118px;
-  margin: 18px 0 14px auto;
-  border-radius: 18px;
+  z-index: 1;
+  width: 126px;
+  height: 126px;
+  margin: 22px 0 0 8px;
+  border-radius: 14px;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.96) 14px, transparent 14px) 0 0 / 22px 22px,
-    linear-gradient(rgba(255, 255, 255, 0.96) 14px, transparent 14px) 0 0 / 22px 22px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
+    linear-gradient(rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   overflow: hidden;
 }
 
 .tourist-card__qr-box {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  border: 5px solid rgba(12, 14, 20, 0.92);
-  background: rgba(255,255,255,0.8);
+  width: 28px;
+  height: 28px;
+  border: 5px solid rgba(12, 14, 20, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   border-radius: 8px;
 }
 
 .tourist-card__qr-box--tl {
-  left: 8px;
-  top: 8px;
+  left: 9px;
+  top: 9px;
 }
 
 .tourist-card__qr-box--tr {
-  right: 8px;
-  top: 8px;
+  right: 9px;
+  top: 9px;
 }
 
 .tourist-card__qr-box--bl {
-  left: 8px;
-  bottom: 8px;
+  left: 9px;
+  bottom: 9px;
 }
 
 .tourist-card__qr-noise {
   position: absolute;
-  inset: 20px;
+  inset: 22px;
   background:
     radial-gradient(circle at 15% 18%, rgba(12, 14, 20, 0.95) 0 8px, transparent 9px),
     radial-gradient(circle at 48% 62%, rgba(12, 14, 20, 0.95) 0 6px, transparent 7px),
@@ -935,11 +944,24 @@ button {
 }
 
 .tourist-card__footer {
-  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: auto;
+  padding-top: 22px;
+  padding-left: 8px;
   font-size: 11px;
   letter-spacing: 0.08em;
   font-weight: 700;
-  opacity: 0.82;
+  opacity: 0.9;
+}
+
+.tourist-card__footer strong {
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 .hero-badge {
@@ -947,12 +969,13 @@ button {
   right: 5.5%;
   display: flex;
   align-items: center;
-  gap: 12px;
-  min-width: 216px;
-  padding: 16px 18px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 20px 44px rgba(18, 24, 28, 0.14);
+  gap: 14px;
+  min-width: 230px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 40px rgba(18, 24, 28, 0.1);
   z-index: 4;
 }
 
@@ -967,10 +990,10 @@ button {
 
 .hero-badge__icon {
   position: relative;
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  background: #e5f8ef;
+  width: 38px;
+  height: 38px;
+  border-radius: 0;
+  background: transparent;
   flex-shrink: 0;
 }
 
@@ -983,42 +1006,43 @@ button {
 }
 
 .hero-badge__icon--shield::before {
-  width: 18px;
-  height: 22px;
+  width: 26px;
+  height: 30px;
   background: linear-gradient(180deg, #21b876, #188d58);
   clip-path: polygon(50% 0, 100% 18%, 88% 80%, 50% 100%, 12% 80%, 0 18%);
 }
 
 .hero-badge__icon--shield::after {
-  width: 10px;
-  height: 6px;
+  width: 11px;
+  height: 7px;
   border-left: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
   transform: rotate(-45deg) translate(1px, -2px);
-  top: 14px;
+  top: 13px;
 }
 
 .hero-badge__icon--gift::before {
-  width: 20px;
-  height: 16px;
+  width: 24px;
+  height: 18px;
   border-radius: 4px;
   background: linear-gradient(180deg, #21b876, #188d58);
-  top: 18px;
+  top: 17px;
 }
 
 .hero-badge__icon--gift::after {
-  width: 24px;
-  height: 10px;
+  width: 28px;
+  height: 12px;
   background:
-    linear-gradient(90deg, transparent 10px, #ffffff 10px 14px, transparent 14px),
-    linear-gradient(0deg, transparent 4px, #188d58 4px 100%);
-  top: 9px;
+    linear-gradient(90deg, transparent 12px, #ffffff 12px 16px, transparent 16px),
+    linear-gradient(0deg, transparent 5px, #188d58 5px 100%);
+  top: 7px;
 }
 
 .hero-badge strong,
 .info-card strong {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -1032,7 +1056,7 @@ button {
 .travelers-board__copy small {
   display: block;
   color: var(--ink-700);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .hero__scribble {
@@ -2471,14 +2495,24 @@ button {
   }
 
   .tourist-card__avatar {
-    width: 42px;
-    height: 42px;
+    width: 62px;
+    height: 62px;
+    margin-top: 12px;
+    margin-left: 8px;
   }
 
   .tourist-card__qr {
-    width: 84px;
-    height: 84px;
-    margin: 12px 0 10px auto;
+    width: 88px;
+    height: 88px;
+    margin: 12px 0 0 6px;
+  }
+
+  .tourist-card__handle {
+    font-size: 11px;
+  }
+
+  .tourist-card__footer strong {
+    font-size: 16px;
   }
 
   .hero-badge {
@@ -2699,6 +2733,30 @@ button {
   .tourist-card__label,
   .tourist-card__footer {
     font-size: 10px;
+  }
+
+  .tourist-card__avatar {
+    width: 54px;
+    height: 54px;
+    margin-left: 4px;
+  }
+
+  .tourist-card__name {
+    font-size: 16px;
+  }
+
+  .tourist-card__handle {
+    font-size: 10px;
+  }
+
+  .tourist-card__qr {
+    width: 78px;
+    height: 78px;
+    margin-left: 4px;
+  }
+
+  .tourist-card__footer strong {
+    font-size: 14px;
   }
 
   .hero-badge {

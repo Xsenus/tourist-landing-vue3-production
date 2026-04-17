@@ -1,12 +1,11 @@
 <template>
   <article class="tourist-card" data-animate="hero-member-card">
-    <div class="tourist-card__header">
-      <div>
-        <div class="tourist-card__label">TOURIST CARD</div>
-        <div class="tourist-card__handle" data-animate="card-handle">{{ card.handle }}</div>
-      </div>
+    <div class="tourist-card__label">TOURIST CARD</div>
+    <img class="tourist-card__avatar" :src="card.avatar" :alt="card.name" data-animate="card-avatar" />
 
-      <img class="tourist-card__avatar" :src="card.avatar" :alt="card.name" data-animate="card-avatar" />
+    <div class="tourist-card__identity">
+      <div class="tourist-card__name" data-animate="card-name">{{ card.name }}</div>
+      <div class="tourist-card__handle" data-animate="card-handle">{{ card.handle }}</div>
     </div>
 
     <div class="tourist-card__qr" aria-hidden="true" data-animate="card-qr">
@@ -16,11 +15,9 @@
       <span class="tourist-card__qr-noise"></span>
     </div>
 
-    <div class="tourist-card__name" data-animate="card-name">{{ card.name }}</div>
-    <div class="tourist-card__footer" data-animate="card-footer">MEMBER SINCE {{ card.memberSince }}</div>
-
-    <div class="tourist-card__meta-row" data-animate="card-meta-row">
-      <span v-for="tag in card.tags" :key="tag" class="tourist-card__meta-pill">{{ tag }}</span>
+    <div class="tourist-card__footer" data-animate="card-footer">
+      <span>MEMBER SINCE</span>
+      <strong>{{ card.memberSince }}</strong>
     </div>
   </article>
 </template>

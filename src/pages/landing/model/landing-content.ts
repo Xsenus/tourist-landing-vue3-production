@@ -19,9 +19,13 @@ import {
   dealStreet,
   dealStreetFig,
   heroBackground,
-  mapArt,
+  heroMapScreenFig,
   journeyMapFig,
-  phoneFrame
+  phoneFrame,
+  referenceAlexAvatar,
+  referenceAlexThumb1,
+  referenceAlexThumb2,
+  referenceAlexThumb3
 } from '@/shared/assets/images';
 import type {
   BookingSectionContent,
@@ -55,7 +59,7 @@ export const heroSectionContent: HeroSectionContent = {
   secondaryHref: '#deals',
   note: 'Your key to\nthe world',
   background: heroBackground,
-  backPhoneImage: mapArt,
+  backPhoneImage: heroMapScreenFig,
   phoneFrame,
   phoneUi: {
     time: '9:41',
@@ -72,20 +76,20 @@ export const heroSectionContent: HeroSectionContent = {
       meta: 'Peshekhivska, 17b',
       price: '',
       discount: 'Save up to 20%',
-      image: dealStreet
+      image: dealStreetFig
     },
     sectionTitle: 'Find your next spot',
     sectionAction: 'Discover places that match your vibe',
     cards: [
-      { title: 'Shops', meta: '35%', image: dealStreet },
-      { title: 'Cafes', meta: '37%', image: dealFood },
-      { title: 'Restaurants', meta: '40%', image: dealFood },
-      { title: 'Places to Stay', meta: '20%', image: dealCove },
-      { title: 'Bars & Pubs', meta: '45%', image: dealFood },
-      { title: 'Attractions & Museums', meta: '60%', image: dealStreet },
-      { title: 'Wellness & Beauty', meta: '20%', image: dealBeach },
-      { title: 'Services & Essentials', meta: '45%', image: dealStreet },
-      { title: 'More', meta: '60%', image: dealStreet }
+      { title: 'Shops', meta: '35%', image: dealStreetFig },
+      { title: 'Cafes', meta: '37%', image: dealFoodFig },
+      { title: 'Restaurants', meta: '40%', image: dealFoodFig },
+      { title: 'Places to Stay', meta: '20%', image: dealCoveFig },
+      { title: 'Bars & Pubs', meta: '45%', image: dealFoodFig },
+      { title: 'Attractions & Museums', meta: '60%', image: dealStreetFig },
+      { title: 'Wellness & Beauty', meta: '20%', image: dealBeachFig },
+      { title: 'Services & Essentials', meta: '45%', image: dealStreetFig },
+      { title: 'More', meta: '60%', image: dealStreetFig }
     ],
     nav: [
       { label: 'Home', icon: 'home', active: false },
@@ -113,7 +117,7 @@ export const socialProofContent: SocialProofContent = {
   subline: 'already exploring',
   stars: '\u2605\u2605\u2605\u2605\u2605',
   avatars: [
-    { name: 'Alex', image: avatarAlex },
+    { name: 'Alex', image: referenceAlexAvatar },
     { name: 'Olivia', image: avatarOlivia },
     { name: 'Mia', image: avatarMia },
     { name: 'Luca', image: avatarLuca },
@@ -180,7 +184,7 @@ export const perksSectionContent: PerksSectionContent = {
   profile: {
     url: 'tourist.com/Alex',
     member: 'MEMBER',
-    avatar: avatarAlex,
+    avatar: referenceAlexAvatar,
     name: 'Alex Explorer',
     role: 'Traveler \u00B7 47 countries',
     stats: [
@@ -189,9 +193,9 @@ export const perksSectionContent: PerksSectionContent = {
       { value: '1.2K', label: 'Cities' }
     ],
     thumbs: [
-      { image: avatarHero, label: 'Beach' },
-      { image: avatarMia, label: 'Surf' },
-      { image: avatarJonah, label: 'Stories' }
+      { image: referenceAlexThumb1, label: 'Beach' },
+      { image: referenceAlexThumb2, label: 'Surf' },
+      { image: referenceAlexThumb3, label: 'Stories' }
     ]
   },
   saveCard: {
