@@ -38,7 +38,9 @@
           cities-class="berlin-hamburg-munich"
           flag-class="germany-de"
           stat-class="cities-8a"
+          flag="de"
           country="Germany"
+          count="8 CITIES"
           cities-html="Berlin, Hamburg, Munich, Cologne, <br />and 5 more"
         />
         <div class="rectangle-8b"></div>
@@ -50,7 +52,9 @@
           cities-class="rome-milan-venice"
           flag-class="italy-it"
           stat-class="cities-8f"
+          flag="it"
           country="Italy"
+          count="8 CITIES"
           cities-html="Rome, Milan, Venice, Florence, <br />and 3 more"
         />
         <div class="rectangle-90"></div>
@@ -62,7 +66,9 @@
           cities-class="tokyo-kyoto-osaka"
           flag-class="japan-jp"
           stat-class="cities-94"
+          flag="jp"
           country="Japan"
+          count="8 CITIES"
           cities-html="Tokyo, Kyoto, Osaka, Nara"
         />
         <div class="rectangle-95"></div>
@@ -74,7 +80,9 @@
           cities-class="new-york-los-angeles"
           flag-class="united-states-of-america-us"
           stat-class="cities-99"
+          flag="us"
           country="United States"
+          count="8 CITIES"
           cities-html="New York, Los Angeles, Miami, <br />and 4 more"
         />
       </div>

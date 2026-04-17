@@ -8,33 +8,38 @@
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--left"
       :data-design-element="`${prefix}-left`"
     >
-      <IdentitySideCard :screen="identitySectionContent.screens.left" modifier="left" />
+      <IdentitySideCard :screen="screens.left" modifier="left" />
     </div>
 
     <div
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--main"
       :data-design-element="`${prefix}-main`"
     >
-      <IdentityMainCard :profile="identitySectionContent.screens.main" />
+      <IdentityMainCard :profile="screens.main" />
     </div>
 
     <div
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--right"
       :data-design-element="`${prefix}-right`"
     >
-      <IdentitySideCard :screen="identitySectionContent.screens.right" modifier="right" />
+      <IdentitySideCard :screen="screens.right" modifier="right" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { identitySectionContent } from '@/pages/landing/model/landing-content';
+import type { IdentityMainScreenContent, IdentitySideScreenContent } from '@/pages/landing/model/landing.types';
 import IdentityMainCard from './IdentityMainCard.vue';
 import IdentitySideCard from './IdentitySideCard.vue';
 
 withDefaults(
   defineProps<{
     variant: 'desktop' | 'mobile';
+    screens: {
+      left: IdentitySideScreenContent;
+      main: IdentityMainScreenContent;
+      right: IdentitySideScreenContent;
+    };
     designElement?: string;
     prefix?: string;
   }>(),

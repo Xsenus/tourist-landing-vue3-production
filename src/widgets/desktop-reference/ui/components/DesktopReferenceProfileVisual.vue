@@ -6,6 +6,7 @@
       <ReferenceProfileCardStack
         design-element="desktop-profile-screen-stack"
         prefix="desktop-profile-screen"
+        :screens="referenceIdentityScreens"
         variant="desktop"
       />
     </div>
@@ -14,5 +15,6 @@
 </template>
 
 <script setup lang="ts">
+import { referenceIdentityScreens } from '@/pages/landing/model/reference-content';
 import ReferenceProfileCardStack from '@/entities/identity/ui/ReferenceProfileCardStack.vue';
 </script>

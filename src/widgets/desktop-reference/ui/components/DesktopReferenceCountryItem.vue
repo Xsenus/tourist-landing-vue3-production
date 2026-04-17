@@ -9,14 +9,15 @@
           </template>
         </span>
       </div>
-      <div :class="flagClass"></div>
+      <FlagIcon class="country-flag" :country="flag" />
     </div>
-    <span :class="statClass">8 CITIES</span>
+    <span :class="statClass">{{ count }}</span>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import FlagIcon from '@/shared/ui/FlagIcon.vue';
 
 const props = defineProps<{
   wrapperClass: string;
@@ -26,9 +27,22 @@ const props = defineProps<{
   citiesClass: string;
   flagClass: string;
   statClass: string;
+  flag: 'de' | 'it' | 'jp' | 'us';
   country: string;
   citiesHtml: string;
+  count?: string;
 }>();
 
 const cityLines = computed(() => props.citiesHtml.split(/<br\s*\/?>/i).map((line) => line.trim()));
 </script>
+
+<style scoped>
+.country-flag {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 33px;
+  height: 25px;
+  border-radius: 3px;
+}
+</style>

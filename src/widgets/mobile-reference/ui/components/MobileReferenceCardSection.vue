@@ -46,12 +46,7 @@
       <ArrowRightIcon class="arrow-3b" />
     </a>
     <div class="frame-3c" data-design-element="mobile-card-preview">
-      <div class="rectangle-3d"></div>
-      <div class="rectangle-3e"></div>
-      <span class="tourist-com-alex">tourist.com/Alex</span><span class="countries">Countries</span><span class="cities">Cities</span><span class="trips">Trips</span>
-      <div class="rectangle-3f"></div>
-      <div class="rectangle-40"></div>
-      <div class="rectangle-41"></div>
+      <ReferencePerksProfileCard :profile="referencePerksProfile" />
     </div>
     <div class="flex-row-a" data-design-element="mobile-card-tagline">
       <div class="union"></div>
@@ -103,5 +98,7 @@
 </template>
 
 <script setup lang="ts">
+import { referencePerksProfile } from '@/pages/landing/model/reference-content';
+import ReferencePerksProfileCard from '@/entities/perks/ui/ReferencePerksProfileCard.vue';
 import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 </script>

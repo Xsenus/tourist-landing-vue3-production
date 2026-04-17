@@ -20,9 +20,14 @@ import dealFood from '@/shared/assets/images/deal-food.jpg';
 import dealStreetFig from '@/shared/assets/images/deal-street-fig.png';
 import dealStreet from '@/shared/assets/images/deal-street.jpg';
 import heroBackground from '@/shared/assets/images/hero-bg.jpg';
+import heroMapScreenFig from '@/shared/assets/images/hero-map-screen-fig.png';
 import journeyMapFig from '@/shared/assets/images/journey-map-fig.png';
 import mapArt from '@/shared/assets/images/map-art.png';
 import phoneFrame from '@/shared/assets/images/phone-frame.png';
+import referenceAlexAvatar from '@/shared/assets/images/reference-alex-avatar.png';
+import referenceAlexThumb1 from '@/shared/assets/images/reference-alex-thumb-1.png';
+import referenceAlexThumb2 from '@/shared/assets/images/reference-alex-thumb-2.png';
+import referenceAlexThumb3 from '@/shared/assets/images/reference-alex-thumb-3.png';
 
 export {
   avatarAlex,
@@ -47,7 +52,12 @@ export {
   dealFood,
   dealStreet,
   heroBackground,
+  heroMapScreenFig,
   journeyMapFig,
   mapArt,
-  phoneFrame
+  phoneFrame,
+  referenceAlexAvatar,
+  referenceAlexThumb1,
+  referenceAlexThumb2,
+  referenceAlexThumb3
 };

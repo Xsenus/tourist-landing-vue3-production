@@ -57,6 +57,7 @@
           <ReferenceProfileCardStack
             design-element="mobile-profile-screen-stack"
             prefix="mobile-profile-screen"
+            :screens="referenceIdentityScreens"
             variant="mobile"
           />
         </div>
@@ -68,6 +69,7 @@
 </template>
 
 <script setup lang="ts">
+import { referenceIdentityScreens } from '@/pages/landing/model/reference-content';
 import ReferenceProfileCardStack from '@/entities/identity/ui/ReferenceProfileCardStack.vue';
 import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 </script>
