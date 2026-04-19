@@ -2,12 +2,9 @@ import {
   avatarAlex,
   avatarCamila,
   avatarHero,
+  avatarJonah,
   avatarOlivia,
-  journeyMapFig,
-  referenceAlexAvatar,
-  referenceAlexThumb1,
-  referenceAlexThumb2,
-  referenceAlexThumb3
+  journeyMapFig
 } from '@/shared/assets/images';
 import type {
   IdentityMainScreenContent,
@@ -26,7 +23,7 @@ import type {
 export const referencePerksProfile: PerksProfileContent = {
   url: 'tourist.com/Alex',
   member: 'MEMBER',
-  avatar: referenceAlexAvatar,
+  avatar: avatarAlex,
   name: 'Alex Explorer',
   role: 'Traveler \u00B7 47 countries',
   stats: [
@@ -35,9 +32,9 @@ export const referencePerksProfile: PerksProfileContent = {
     { value: '1.2K', label: 'Cities' }
   ],
   thumbs: [
-    { image: referenceAlexThumb1, label: 'Portrait' },
-    { image: referenceAlexThumb2, label: 'Beach' },
-    { image: referenceAlexThumb3, label: 'Profile' }
+    { image: avatarCamila, label: 'Portrait' },
+    { image: avatarHero, label: 'Beach' },
+    { image: avatarJonah, label: 'Profile' }
   ]
 };
 
@@ -133,26 +130,26 @@ export const referenceIdentityScreens = {
 export const referenceIdentityStackConfig: ReferenceIdentityStackConfig = {
   desktop: {
     left: {
-      top: '118px',
-      left: '42px',
+      top: '126px',
+      left: '76px',
       width: '256px',
       rotate: '-7.8deg',
-      scale: 0.99,
+      scale: 0.82,
       zIndex: 1
     },
     main: {
-      top: '0px',
-      left: '224px',
+      top: '8px',
+      left: '176px',
       width: '348px',
-      scale: 1.16,
+      scale: 0.9,
       zIndex: 3
     },
     right: {
-      top: '106px',
-      right: '18px',
+      top: '122px',
+      right: '34px',
       width: '256px',
       rotate: '7.8deg',
-      scale: 0.99,
+      scale: 0.82,
       zIndex: 2
     }
   },
@@ -213,44 +210,44 @@ export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', 
     width: '822px',
     height: '716px',
     backPhone: {
-      top: '138px',
-      left: '26px',
-      width: '244px',
-      rotate: '-13.6deg',
+      top: '126px',
+      left: '18px',
+      width: '236px',
+      rotate: '-13.2deg',
       zIndex: 1
     },
     frontPhone: {
-      top: '8px',
-      left: '236px',
-      width: '348px',
+      top: '0px',
+      left: '224px',
+      width: '340px',
       zIndex: 3
     },
     card: {
-      top: '18px',
-      right: '12px',
-      width: '254px',
-      rotate: '7deg',
+      top: '12px',
+      right: '8px',
+      width: '244px',
+      rotate: '7.2deg',
       zIndex: 2
     },
     badges: {
       top: {
-        top: '200px',
-        right: '14px',
-        width: '238px',
+        top: '210px',
+        right: '20px',
+        width: '214px',
         zIndex: 4
       },
       bottom: {
-        top: '362px',
-        right: '36px',
-        width: '236px',
+        top: '366px',
+        right: '38px',
+        width: '214px',
         zIndex: 4
       }
     },
     scribble: {
-      right: '38px',
-      bottom: '-12px',
-      width: '170px',
-      fontSize: '22px'
+      right: '24px',
+      bottom: '44px',
+      width: '176px',
+      fontSize: '21px'
     }
   },
   tablet: {
@@ -355,9 +352,9 @@ export const referenceJourneyPreviewCard: ReferenceJourneyPreviewCardData = {
 };
 
 export const referencePerksFriends: ReferenceAvatarStackItem[] = [
-  { name: 'Alex', image: referenceAlexThumb3 },
+  { name: 'Alex', image: avatarAlex },
   { name: 'Emily', image: avatarCamila },
-  { name: 'Jonah', image: avatarHero }
+  { name: 'Jonah', image: avatarJonah }
 ];
 
 export const referenceJourneyTravelers: ReferenceAvatarStackItem[] = [

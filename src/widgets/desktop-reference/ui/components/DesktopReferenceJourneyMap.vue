@@ -38,15 +38,15 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 <style scoped>
 .desktop-reference-journey-map__preview {
   position: absolute;
-  top: 104px;
-  left: 1078px;
-  width: 236px;
+  top: 112px;
+  left: 1116px;
+  width: 224px;
   z-index: 301;
 }
 
 .desktop-reference-journey-map__preview :deep(.reference-journey-preview-card) {
   width: 100%;
-  min-height: 496px;
+  min-height: 476px;
 }
 
 .desktop-reference-journey-map__note {
