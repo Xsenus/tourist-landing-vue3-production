@@ -1,5 +1,5 @@
 <template>
-  <article class="reference-perks-profile-card" data-design-element="reference-perks-profile-card">
+  <article class="reference-perks-profile-card" :class="`reference-perks-profile-card--${variant}`" :style="cardStyle" data-design-element="reference-perks-profile-card">
     <div class="reference-perks-profile-card__topbar">
       <div class="reference-perks-profile-card__brand">
         <div class="reference-perks-profile-card__brand-mark">T</div>
@@ -38,11 +38,37 @@
 </template>
 
 <script setup lang="ts">
-import type { PerksProfileContent } from '@/pages/landing/model/landing.types';
+import { computed } from 'vue';
 
-defineProps<{
+import type { PerksProfileContent } from '@/pages/landing/model/landing.types';
+import { referencePerksCardConfig } from '@/pages/landing/model/reference-content';
+
+const props = withDefaults(
+  defineProps<{
   profile: PerksProfileContent;
-}>();
+  variant?: 'desktop' | 'tablet' | 'mobile';
+}>(),
+  {
+    variant: 'desktop'
+  }
+);
+
+const cardStyle = computed(() => {
+  const config = referencePerksCardConfig[props.variant];
+
+  return {
+    '--reference-perks-padding': config.padding,
+    '--reference-perks-radius': config.radius,
+    '--reference-perks-border-width': config.borderWidth,
+    '--reference-perks-avatar-size': config.avatarSize,
+    '--reference-perks-name-size': config.nameSize,
+    '--reference-perks-meta-size': config.metaSize,
+    '--reference-perks-gallery-height': config.galleryHeight,
+    '--reference-perks-stat-value-size': config.statValueSize,
+    '--reference-perks-stat-label-size': config.statLabelSize,
+    '--reference-perks-topbar-padding': config.topbarPadding
+  };
+});
 </script>
 
 <style scoped>
@@ -52,10 +78,10 @@ defineProps<{
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 12px 12px 11px;
+  padding: var(--reference-perks-padding);
   background: linear-gradient(180deg, #fefaf7 0%, #fcf7f3 100%);
-  border: 4px solid #ffffff;
-  border-radius: 20px;
+  border: var(--reference-perks-border-width) solid #ffffff;
+  border-radius: var(--reference-perks-radius);
   box-shadow: 0 12px 24px 0 rgba(72, 72, 72, 0.08);
 }
 
@@ -64,7 +90,7 @@ defineProps<{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 9px;
+  padding: var(--reference-perks-topbar-padding);
 }
 
 .reference-perks-profile-card__brand {
@@ -118,8 +144,8 @@ defineProps<{
 }
 
 .reference-perks-profile-card__avatar {
-  width: 103px;
-  height: 103px;
+  width: var(--reference-perks-avatar-size);
+  height: var(--reference-perks-avatar-size);
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -130,7 +156,7 @@ defineProps<{
   margin-top: 14px;
   color: #12181c;
   font-family: Heebo, sans-serif;
-  font-size: 27px;
+  font-size: var(--reference-perks-name-size);
   font-weight: 700;
   line-height: 1.04;
   letter-spacing: -0.03em;
@@ -142,7 +168,7 @@ defineProps<{
   margin-top: 8px;
   color: #53565c;
   font-family: Heebo, sans-serif;
-  font-size: 13px;
+  font-size: var(--reference-perks-meta-size);
   font-weight: 500;
   line-height: 1.15;
   text-align: center;
@@ -178,7 +204,7 @@ defineProps<{
 .reference-perks-profile-card__stat-value {
   color: #12181c;
   font-family: Heebo, sans-serif;
-  font-size: 20px;
+  font-size: var(--reference-perks-stat-value-size);
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
@@ -187,7 +213,7 @@ defineProps<{
 .reference-perks-profile-card__stat-label {
   color: #2e3740;
   font-family: Heebo, sans-serif;
-  font-size: 13px;
+  font-size: var(--reference-perks-stat-label-size);
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
@@ -202,7 +228,7 @@ defineProps<{
 }
 
 .reference-perks-profile-card__gallery-item {
-  height: 77px;
+  height: var(--reference-perks-gallery-height);
   overflow: hidden;
   border-radius: 16px;
   background: #e8dccf;

@@ -46,7 +46,7 @@
       <ArrowRightIcon class="arrow-3b" />
     </a>
     <div class="frame-3c" data-design-element="mobile-card-preview">
-      <ReferencePerksProfileCard :profile="referencePerksProfile" />
+      <ReferencePerksProfileCard :profile="referencePerksProfile" variant="mobile" />
     </div>
     <div class="flex-row-a" data-design-element="mobile-card-tagline">
       <div class="union"></div>
@@ -87,18 +87,34 @@
         </div>
         <span class="and-more">&amp; more</span>
       </div>
-      <div class="frame-51" data-design-element="mobile-card-friends-strip">
-        <div class="avatar-image"></div>
-        <div class="avatar-image-52"></div>
-        <div class="avatar-image-53"></div>
+      <div class="frame-51 mobile-card-section__friends" data-design-element="mobile-card-friends-strip">
+        <FriendsStrip :avatars="perksSectionContent.friends.avatars" :copy="perksSectionContent.friends.copy" />
       </div>
-      <span class="plus-k-friends">+1.2K friends</span>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { perksSectionContent } from '@/pages/landing/model/landing-content';
 import { referencePerksProfile } from '@/pages/landing/model/reference-content';
+import FriendsStrip from '@/entities/perks/ui/FriendsStrip.vue';
 import ReferencePerksProfileCard from '@/entities/perks/ui/ReferencePerksProfileCard.vue';
 import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 </script>
+
+<style scoped>
+.mobile-card-section__friends {
+  width: 100%;
+}
+
+.mobile-card-section__friends :deep(.friends-strip) {
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0;
+}
+
+.mobile-card-section__friends :deep(.friends-strip__text) {
+  color: #a09a96;
+  font-size: 15px;
+}
+</style>

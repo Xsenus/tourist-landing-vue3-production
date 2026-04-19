@@ -24,7 +24,6 @@
       </div>
     </div>
     <MobileReferenceHeroActions />
-    <div class="group-ca" data-design-element="mobile-hero-doodle"></div>
     <div class="frame-cb" data-design-element="mobile-hero-proof">
       <div class="frame-cc">
         <span class="travelers">20,000+ travelers</span><span class="exploring">already exploring</span>
@@ -37,32 +36,42 @@
         <div class="star-d2"></div>
       </div>
     </div>
-    <div class="frame-d3" data-design-element="mobile-hero-social-strip"></div>
-    <div class="frame-d4" data-design-element="mobile-hero-visual">
-      <div class="ellipse-d5"></div>
-      <div class="empty-d6"></div>
-      <div class="group-d7"></div>
-      <div class="group-d8" data-design-element="mobile-hero-no-fees-badge">
-        <div class="rectangle-d9"></div>
-        <div class="frame-da">
-          <span class="no-fees">No fees.</span><span class="no-commissions">No commissions.</span>
-        </div>
-        <div class="shield-yes-fill-db"></div>
-      </div>
-      <div class="group-dc" data-design-element="mobile-hero-unlock-deals-badge">
-        <div class="rectangle-dd"></div>
-        <div class="frame-de">
-          <span class="unlock-deals">Unlock deals</span><span class="worldwide">worldwide</span>
-        </div>
-        <div class="present-df"></div>
-      </div>
-      <div class="ellipse-e0"></div>
+    <div class="frame-d3 mobile-reference-hero__avatars" data-design-element="mobile-hero-social-strip">
+      <AvatarStack :items="socialProofContent.avatars" :size="36" :overlap="10" />
     </div>
-    <div class="frame-e1" data-design-element="mobile-hero-handwritten-note"></div>
-    <div class="vector-e2" data-design-element="mobile-hero-arrow"></div>
+    <div class="frame-d4" data-design-element="mobile-hero-visual">
+      <ReferenceHeroVisual
+        class="mobile-reference-hero__visual"
+        :breakpoint="'mobile'"
+        :content="heroSectionContent"
+        :layout="referenceHeroVisualConfig.mobile"
+      />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { heroSectionContent, socialProofContent } from '@/pages/landing/model/landing-content';
+import { referenceHeroVisualConfig } from '@/pages/landing/model/reference-content';
+import ReferenceHeroVisual from '@/entities/hero/ui/ReferenceHeroVisual.vue';
+import AvatarStack from '@/shared/ui/AvatarStack.vue';
 import MobileReferenceHeroActions from './MobileReferenceHeroActions.vue';
 </script>
+
+<style scoped>
+.mobile-reference-hero__avatars {
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+.mobile-reference-hero__visual {
+  position: absolute;
+  left: 18px;
+  top: 0;
+}
+
+.frame-d4 {
+  overflow: visible;
+}
+</style>

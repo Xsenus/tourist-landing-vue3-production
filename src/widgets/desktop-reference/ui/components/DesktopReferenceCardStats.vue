@@ -39,11 +39,23 @@
       </div>
       <span class="and-more">&amp; more</span>
     </div>
-    <div class="frame-60" data-design-element="desktop-card-friends-strip">
-      <div class="avatar-image"></div>
-      <div class="avatar-image-61"></div>
-      <div class="avatar-image-62"></div>
+    <div class="frame-60 desktop-reference-card-stats__friends" data-design-element="desktop-card-friends-strip">
+      <FriendsStrip :avatars="perksSectionContent.friends.avatars" :copy="perksSectionContent.friends.copy" />
     </div>
-    <span class="plus-k-friends">+1.2K friends</span>
   </div>
 </template>
+
+<script setup lang="ts">
+import { perksSectionContent } from '@/pages/landing/model/landing-content';
+import FriendsStrip from '@/entities/perks/ui/FriendsStrip.vue';
+</script>
+
+<style scoped>
+.desktop-reference-card-stats__friends {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 8px;
+}
+</style>

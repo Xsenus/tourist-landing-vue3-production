@@ -1,6 +1,6 @@
 <template>
   <div class="frame-49" data-design-element="desktop-card-preview">
-    <ReferencePerksProfileCard :profile="referencePerksProfile" />
+    <ReferencePerksProfileCard :profile="referencePerksProfile" variant="desktop" />
   </div>
   <div class="union" data-design-element="desktop-card-preview-accent"></div>
 </template>
