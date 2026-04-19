@@ -117,18 +117,8 @@
         </div>
       </div>
     </div>
-    <div class="rectangle-ab" data-design-element="mobile-journey-travelers-card">
-      <div class="frame-ac">
-        <div class="frame-ad">
-          <div class="frame-ae">
-            <div class="avatar-image-af"></div>
-            <div class="avatar-image-b0"></div>
-            <div class="avatar-image-b1"></div>
-          </div>
-          <span class="plus-k">+1.2K</span>
-        </div>
-        <span class="travelers-sharing-journey">Travelers are exploring the world and sharing their journey</span>
-      </div>
+    <div class="rectangle-ab mobile-reference-journey__travelers" data-design-element="mobile-journey-travelers-card">
+      <TravelersBoard :travelers="journeySectionContent.travelers" />
     </div>
     <div class="frame-b2" data-design-element="mobile-journey-map">
       <div class="empty"></div>
@@ -153,6 +143,33 @@
 </template>
 
 <script setup lang="ts">
+import { journeySectionContent } from '@/pages/landing/model/landing-content';
+import TravelersBoard from '@/entities/journey/ui/TravelersBoard.vue';
 import ArrowRightIcon from '@/shared/ui/ArrowRightIcon.vue';
 import MobileReferenceCountryItem from './MobileReferenceCountryItem.vue';
 </script>
+
+<style scoped>
+.mobile-reference-journey__travelers {
+  padding: 0;
+  background: transparent;
+}
+
+.mobile-reference-journey__travelers :deep(.travelers-board) {
+  width: 100%;
+  height: 100%;
+  padding: 14px 16px;
+  border-radius: 19px;
+  background: #f5f6fa;
+  box-shadow: none;
+}
+
+.mobile-reference-journey__travelers :deep(.travelers-board__copy strong) {
+  font-size: 18px;
+}
+
+.mobile-reference-journey__travelers :deep(.travelers-board__copy small) {
+  font-size: 13px;
+  line-height: 1.38;
+}
+</style>

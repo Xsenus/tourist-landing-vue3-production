@@ -23,17 +23,39 @@
       </div>
     </div>
   </div>
-  <div class="rectangle-bf" data-design-element="desktop-journey-travelers-card">
-    <div class="frame-c0">
-      <div class="frame-c1">
-        <div class="frame-c2">
-          <div class="avatar-image-c3"></div>
-          <div class="avatar-image-c4"></div>
-          <div class="avatar-image-c5"></div>
-        </div>
-        <span class="plus-k">+1.2K</span>
-      </div>
-      <span class="travelers-explore-world">Travelers are exploring the world <br />and sharing their journey</span>
-    </div>
+  <div class="rectangle-bf desktop-reference-journey-stats__travelers" data-design-element="desktop-journey-travelers-card">
+    <TravelersBoard :travelers="journeySectionContent.travelers" />
   </div>
 </template>
+
+<script setup lang="ts">
+import { journeySectionContent } from '@/pages/landing/model/landing-content';
+import TravelersBoard from '@/entities/journey/ui/TravelersBoard.vue';
+</script>
+
+<style scoped>
+.desktop-reference-journey-stats__travelers {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.desktop-reference-journey-stats__travelers :deep(.travelers-board) {
+  width: 100%;
+  height: 100%;
+  padding: 18px 22px;
+  border-radius: 19px;
+  background: #f5f6fa;
+  box-shadow: none;
+}
+
+.desktop-reference-journey-stats__travelers :deep(.travelers-board__copy strong) {
+  font-size: 22px;
+}
+
+.desktop-reference-journey-stats__travelers :deep(.travelers-board__copy small) {
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 1.42;
+}
+</style>

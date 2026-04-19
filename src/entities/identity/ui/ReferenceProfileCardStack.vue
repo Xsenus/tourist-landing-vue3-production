@@ -1,53 +1,71 @@
 <template>
   <div
     class="reference-profile-card-stack"
-    :class="`reference-profile-card-stack--${variant}`"
-    :data-design-element="designElement"
+    :class="`reference-profile-card-stack--${props.variant}`"
+    :data-design-element="props.designElement"
   >
     <div
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--left"
-      :data-design-element="`${prefix}-left`"
+      :data-design-element="`${props.prefix}-left`"
+      :style="screenStyle(props.layout[props.variant].left)"
     >
-      <IdentitySideCard :screen="screens.left" modifier="left" />
+      <ReferenceIdentitySideCard :screen="props.screens.left" modifier="left" />
     </div>
 
     <div
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--main"
-      :data-design-element="`${prefix}-main`"
+      :data-design-element="`${props.prefix}-main`"
+      :style="screenStyle(props.layout[props.variant].main)"
     >
-      <IdentityMainCard :profile="screens.main" />
+      <ReferenceIdentityMainCard :profile="props.screens.main" />
     </div>
 
     <div
       class="reference-profile-card-stack__screen reference-profile-card-stack__screen--right"
-      :data-design-element="`${prefix}-right`"
+      :data-design-element="`${props.prefix}-right`"
+      :style="screenStyle(props.layout[props.variant].right)"
     >
-      <IdentitySideCard :screen="screens.right" modifier="right" />
+      <ReferenceIdentitySideCard :screen="props.screens.right" modifier="right" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { referenceIdentityStackConfig } from '@/pages/landing/model/reference-content';
 import type { IdentityMainScreenContent, IdentitySideScreenContent } from '@/pages/landing/model/landing.types';
-import IdentityMainCard from './IdentityMainCard.vue';
-import IdentitySideCard from './IdentitySideCard.vue';
+import type { ReferenceIdentityScreenLayout, ReferenceIdentityStackConfig } from '@/pages/landing/model/reference.types';
+import ReferenceIdentityMainCard from './ReferenceIdentityMainCard.vue';
+import ReferenceIdentitySideCard from './ReferenceIdentitySideCard.vue';
 
-withDefaults(
+const props = withDefaults(
   defineProps<{
-    variant: 'desktop' | 'mobile';
+    variant: 'desktop' | 'tablet' | 'mobile';
     screens: {
       left: IdentitySideScreenContent;
       main: IdentityMainScreenContent;
       right: IdentitySideScreenContent;
     };
+    layout?: ReferenceIdentityStackConfig;
     designElement?: string;
     prefix?: string;
   }>(),
   {
+    layout: () => referenceIdentityStackConfig,
     designElement: 'reference-profile-card-stack',
     prefix: 'reference-profile-card'
   }
 );
+
+const screenStyle = (screen: ReferenceIdentityScreenLayout) => ({
+  top: screen.top,
+  left: screen.left,
+  right: screen.right,
+  width: screen.width,
+  zIndex: screen.zIndex,
+  transform: [screen.rotate ? `rotate(${screen.rotate})` : '', screen.scale ? `scale(${screen.scale})` : '']
+    .filter(Boolean)
+    .join(' ')
+});
 </script>
 
 <style scoped>
@@ -61,7 +79,7 @@ withDefaults(
   position: absolute;
 }
 
-.reference-profile-card-stack__screen :deep(.identity-card) {
+.reference-profile-card-stack__screen :deep(.reference-identity-card) {
   position: static;
   left: auto;
   right: auto;
@@ -70,59 +88,15 @@ withDefaults(
   transform: none;
 }
 
-.reference-profile-card-stack__screen--left,
-.reference-profile-card-stack__screen--right {
-  width: 242px;
+.reference-profile-card-stack__screen--left {
+  transform-origin: top left;
 }
 
 .reference-profile-card-stack__screen--main {
-  width: 317px;
-  z-index: 3;
-}
-
-.reference-profile-card-stack--desktop .reference-profile-card-stack__screen--left {
-  top: 93px;
-  left: -6px;
-  z-index: 1;
-  transform: scale(0.946) rotate(-7.8deg);
   transform-origin: top left;
 }
 
-.reference-profile-card-stack--desktop .reference-profile-card-stack__screen--main {
-  top: 0;
-  left: 137px;
-  transform: scale(1.123);
-  transform-origin: top left;
-}
-
-.reference-profile-card-stack--desktop .reference-profile-card-stack__screen--right {
-  top: 91px;
-  right: -8px;
-  z-index: 2;
-  transform: scale(0.942) rotate(7.8deg);
-  transform-origin: top right;
-}
-
-.reference-profile-card-stack--mobile .reference-profile-card-stack__screen--left {
-  top: 72px;
-  left: 8px;
-  z-index: 1;
-  transform: scale(0.47) rotate(-7.8deg);
-  transform-origin: top left;
-}
-
-.reference-profile-card-stack--mobile .reference-profile-card-stack__screen--main {
-  top: 0;
-  left: 82px;
-  transform: scale(0.55);
-  transform-origin: top left;
-}
-
-.reference-profile-card-stack--mobile .reference-profile-card-stack__screen--right {
-  top: 70px;
-  right: 6px;
-  z-index: 2;
-  transform: scale(0.47) rotate(7.8deg);
+.reference-profile-card-stack__screen--right {
   transform-origin: top right;
 }
 </style>
