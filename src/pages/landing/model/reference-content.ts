@@ -207,47 +207,47 @@ export const referenceIdentityStackConfig: ReferenceIdentityStackConfig = {
 
 export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', ReferenceHeroVisualConfig> = {
   desktop: {
-    width: '822px',
-    height: '716px',
+    width: '836px',
+    height: '724px',
     backPhone: {
-      top: '126px',
-      left: '18px',
-      width: '236px',
-      rotate: '-13.2deg',
+      top: '136px',
+      left: '34px',
+      width: '244px',
+      rotate: '-13deg',
       zIndex: 1
     },
     frontPhone: {
-      top: '0px',
-      left: '224px',
-      width: '340px',
+      top: '10px',
+      left: '242px',
+      width: '352px',
       zIndex: 3
     },
     card: {
-      top: '12px',
-      right: '8px',
-      width: '244px',
-      rotate: '7.2deg',
+      top: '24px',
+      right: '4px',
+      width: '250px',
+      rotate: '7.1deg',
       zIndex: 2
     },
     badges: {
       top: {
-        top: '210px',
-        right: '20px',
-        width: '214px',
+        top: '218px',
+        right: '12px',
+        width: '224px',
         zIndex: 4
       },
       bottom: {
-        top: '366px',
-        right: '38px',
-        width: '214px',
+        top: '382px',
+        right: '24px',
+        width: '224px',
         zIndex: 4
       }
     },
     scribble: {
-      right: '24px',
-      bottom: '44px',
-      width: '176px',
-      fontSize: '21px'
+      right: '10px',
+      bottom: '40px',
+      width: '186px',
+      fontSize: '22px'
     }
   },
   tablet: {
