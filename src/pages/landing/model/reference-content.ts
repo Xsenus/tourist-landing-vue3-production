@@ -230,22 +230,22 @@ export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', 
       zIndex: 3
     },
     card: {
-      top: '78px',
-      left: '468px',
-      width: '328px',
+      top: '72px',
+      left: '476px',
+      width: '346px',
       rotate: '6.8deg',
       zIndex: 2
     },
     badges: {
       top: {
         top: '226px',
-        left: '604px',
+        left: '622px',
         width: '177px',
         zIndex: 4
       },
       bottom: {
-        top: '314px',
-        left: '561px',
+        top: '324px',
+        left: '579px',
         width: '170px',
         zIndex: 4
       }
