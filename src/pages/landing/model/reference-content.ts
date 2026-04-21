@@ -218,20 +218,20 @@ export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', 
     height: '706px',
     backPhone: {
       top: '110px',
-      left: '114px',
+      left: '80px',
       width: '178px',
       rotate: '-13.2deg',
       zIndex: 1
     },
     frontPhone: {
       top: '-6px',
-      left: '279px',
+      left: '204px',
       width: '268px',
       zIndex: 3
     },
     card: {
       top: '52px',
-      right: '88px',
+      right: '4px',
       width: '384px',
       rotate: '6.9deg',
       zIndex: 2

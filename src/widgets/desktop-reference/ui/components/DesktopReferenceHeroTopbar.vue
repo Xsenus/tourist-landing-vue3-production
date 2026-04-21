@@ -34,7 +34,7 @@ import ReferenceHeroVisual from '@/entities/hero/ui/ReferenceHeroVisual.vue';
 <style scoped>
 .desktop-reference-hero-build {
   position: absolute;
-  right: 330px;
-  top: 86px;
+  right: 260px;
+  top: 82px;
 }
 </style>
