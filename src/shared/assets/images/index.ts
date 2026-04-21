@@ -28,6 +28,10 @@ import referenceAlexAvatar from '@/shared/assets/images/reference-alex-avatar.pn
 import referenceAlexThumb1 from '@/shared/assets/images/reference-alex-thumb-1.png';
 import referenceAlexThumb2 from '@/shared/assets/images/reference-alex-thumb-2.png';
 import referenceAlexThumb3 from '@/shared/assets/images/reference-alex-thumb-3.png';
+import referenceIdentityLeft from '@/shared/assets/images/reference-identity-left.png';
+import referenceIdentityMain from '@/shared/assets/images/reference-identity-main.png';
+import referenceIdentityRight from '@/shared/assets/images/reference-identity-right.png';
+import referenceJourneyAvatar from '@/shared/assets/images/reference-journey-avatar.png';
 
 export {
   avatarAlex,
@@ -59,5 +63,9 @@ export {
   referenceAlexAvatar,
   referenceAlexThumb1,
   referenceAlexThumb2,
-  referenceAlexThumb3
+  referenceAlexThumb3,
+  referenceIdentityLeft,
+  referenceIdentityMain,
+  referenceIdentityRight,
+  referenceJourneyAvatar
 };

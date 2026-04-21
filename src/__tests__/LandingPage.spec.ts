@@ -4,6 +4,7 @@ import { afterEach, describe, expect, it } from 'vitest';
 import DesktopReferencePage from '@/widgets/desktop-reference/ui/DesktopReferencePage.vue';
 import MobileReferencePage from '@/widgets/mobile-reference/ui/MobileReferencePage.vue';
 import LandingPage from '@/pages/landing/ui/LandingPage.vue';
+import TabletReferencePage from '@/widgets/tablet-reference/ui/TabletReferencePage.vue';
 
 const setViewportWidth = (width: number) => {
   Object.defineProperty(window, 'innerWidth', {
@@ -18,19 +19,19 @@ describe('LandingPage', () => {
     setViewportWidth(1024);
   });
 
-  it('renders the full six-block landing composition', () => {
-    setViewportWidth(1024);
+  it('switches between desktop and mobile reference layouts by viewport width', async () => {
+    setViewportWidth(1440);
+    let wrapper = mount(LandingPage);
+    await flushPromises();
 
-    const wrapper = mount(LandingPage);
+    expect(wrapper.find('[data-layout-mode="desktop"]').exists()).toBe(true);
+    wrapper.unmount();
 
-    expect(wrapper.find('#top').exists()).toBe(true);
-    expect(wrapper.find('#deals').exists()).toBe(true);
-    expect(wrapper.find('#card').exists()).toBe(true);
-    expect(wrapper.find('#book').exists()).toBe(true);
-    expect(wrapper.find('#identity').exists()).toBe(true);
-    expect(wrapper.find('#journey').exists()).toBe(true);
-    expect(wrapper.text()).toContain('Travel better.');
-    expect(wrapper.text()).toContain('See everywhere');
+    setViewportWidth(390);
+    wrapper = mount(LandingPage);
+    await flushPromises();
+
+    expect(wrapper.find('[data-layout-mode="mobile"]').exists()).toBe(true);
   });
 
   it('renders the desktop figma-aligned branch with inspectable hooks', async () => {
@@ -45,6 +46,15 @@ describe('LandingPage', () => {
     expect(wrapper.find('[data-design-element="desktop-deals-cta"]').exists()).toBe(true);
     expect(wrapper.findAll('[data-design-element="desktop-country-item"]')).toHaveLength(4);
     expect(wrapper.find('[data-country="Germany"]').exists()).toBe(true);
+  });
+
+  it('renders the tablet wrapper with the scaled desktop canvas', async () => {
+    const wrapper = mount(TabletReferencePage);
+    await flushPromises();
+
+    expect(wrapper.find('[data-layout-mode="tablet"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="tablet-page"]').exists()).toBe(true);
+    expect(wrapper.find('[data-figma-node="21:14"]').exists()).toBe(true);
   });
 
   it('renders the mobile figma-aligned branch with inspectable hooks', async () => {

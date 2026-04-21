@@ -3,8 +3,15 @@ import {
   avatarCamila,
   avatarHero,
   avatarJonah,
-  avatarOlivia,
-  journeyMapFig
+  journeyMapFig,
+  referenceAlexAvatar,
+  referenceAlexThumb1,
+  referenceAlexThumb2,
+  referenceAlexThumb3,
+  referenceIdentityLeft,
+  referenceIdentityMain,
+  referenceIdentityRight,
+  referenceJourneyAvatar
 } from '@/shared/assets/images';
 import type {
   IdentityMainScreenContent,
@@ -23,7 +30,7 @@ import type {
 export const referencePerksProfile: PerksProfileContent = {
   url: 'tourist.com/Alex',
   member: 'MEMBER',
-  avatar: avatarAlex,
+  avatar: referenceAlexAvatar,
   name: 'Alex Explorer',
   role: 'Traveler \u00B7 47 countries',
   stats: [
@@ -32,24 +39,24 @@ export const referencePerksProfile: PerksProfileContent = {
     { value: '1.2K', label: 'Cities' }
   ],
   thumbs: [
-    { image: avatarCamila, label: 'Portrait' },
-    { image: avatarHero, label: 'Beach' },
-    { image: avatarJonah, label: 'Profile' }
+    { image: referenceAlexThumb1, label: 'Portrait' },
+    { image: referenceAlexThumb2, label: 'Beach' },
+    { image: referenceAlexThumb3, label: 'Profile' }
   ]
 };
 
 export const referencePerksCardConfig: Record<'desktop' | 'tablet' | 'mobile', ReferencePerksCardConfig> = {
   desktop: {
-    padding: '12px 12px 11px',
-    radius: '20px',
-    borderWidth: '4px',
-    avatarSize: '103px',
-    nameSize: '27px',
-    metaSize: '13px',
-    galleryHeight: '77px',
-    statValueSize: '20px',
-    statLabelSize: '13px',
-    topbarPadding: '0 9px'
+    padding: '11px 11px 12px',
+    radius: '21px',
+    borderWidth: '5px',
+    avatarSize: '100px',
+    nameSize: '26px',
+    metaSize: '12px',
+    galleryHeight: '79px',
+    statValueSize: '19px',
+    statLabelSize: '12px',
+    topbarPadding: '0 8px'
   },
   tablet: {
     padding: '11px',
@@ -81,7 +88,7 @@ const leftReferenceScreen: IdentitySideScreenContent = {
   topLabel: 'Preview',
   brand: 'tourist',
   badge: 'PLUS',
-  image: avatarOlivia,
+  image: referenceIdentityLeft,
   name: 'Olena Shevchenko',
   handle: '@olena',
   copy: "Adventure seeker on a quest for the world's best-kept secrets, local spots, stories, and unique stays.",
@@ -95,7 +102,7 @@ const leftReferenceScreen: IdentitySideScreenContent = {
 
 const mainReferenceScreen: IdentityMainScreenContent = {
   time: '9:41',
-  image: avatarCamila,
+  image: referenceIdentityMain,
   name: 'Emily Johnson',
   handle: '@emily_johnson',
   prompt: 'Exchange contact',
@@ -109,10 +116,10 @@ const rightReferenceScreen: IdentitySideScreenContent = {
   topLabel: 'Preview',
   brand: 'tourist',
   badge: 'PLUS',
-  image: avatarHero,
+  image: referenceIdentityRight,
   name: 'Olivia Johnson',
-  handle: '@olivia_johnson',
-  copy: 'Explorer eager to discover hidden gems around the globe. Follow along for travel tips and exclusive deals.',
+  handle: '@serhii',
+  copy: 'Explorer eager to discover hidden gems around the globe. Follow along for travel tips, and exclusive deals!',
   prompt: 'Exchange contact',
   actions: ['Save contact', 'Call me', 'Email me'],
   socialHeading: 'Social links',
@@ -130,26 +137,26 @@ export const referenceIdentityScreens = {
 export const referenceIdentityStackConfig: ReferenceIdentityStackConfig = {
   desktop: {
     left: {
-      top: '126px',
-      left: '76px',
-      width: '256px',
+      top: '59px',
+      left: '64px',
+      width: '312px',
       rotate: '-7.8deg',
-      scale: 0.82,
+      scale: 0.74,
       zIndex: 1
     },
     main: {
-      top: '8px',
-      left: '176px',
-      width: '348px',
-      scale: 0.9,
+      top: '4px',
+      left: '159px',
+      width: '334px',
+      scale: 0.88,
       zIndex: 3
     },
     right: {
-      top: '122px',
-      right: '34px',
-      width: '256px',
+      top: '56px',
+      right: '86px',
+      width: '332px',
       rotate: '7.8deg',
-      scale: 0.82,
+      scale: 0.74,
       zIndex: 2
     }
   },
@@ -207,47 +214,47 @@ export const referenceIdentityStackConfig: ReferenceIdentityStackConfig = {
 
 export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', ReferenceHeroVisualConfig> = {
   desktop: {
-    width: '836px',
-    height: '724px',
+    width: '804px',
+    height: '706px',
     backPhone: {
-      top: '136px',
-      left: '34px',
-      width: '244px',
-      rotate: '-13deg',
+      top: '110px',
+      left: '114px',
+      width: '178px',
+      rotate: '-13.2deg',
       zIndex: 1
     },
     frontPhone: {
-      top: '10px',
-      left: '242px',
-      width: '352px',
+      top: '-6px',
+      left: '279px',
+      width: '268px',
       zIndex: 3
     },
     card: {
-      top: '24px',
-      right: '4px',
-      width: '250px',
-      rotate: '7.1deg',
+      top: '52px',
+      right: '88px',
+      width: '384px',
+      rotate: '6.9deg',
       zIndex: 2
     },
     badges: {
       top: {
-        top: '218px',
-        right: '12px',
-        width: '224px',
+        top: '254px',
+        right: '28px',
+        width: '166px',
         zIndex: 4
       },
       bottom: {
-        top: '382px',
-        right: '24px',
-        width: '224px',
+        top: '378px',
+        right: '150px',
+        width: '212px',
         zIndex: 4
       }
     },
     scribble: {
-      right: '10px',
-      bottom: '40px',
-      width: '186px',
-      fontSize: '22px'
+      right: '0px',
+      bottom: '56px',
+      width: '190px',
+      fontSize: '18px'
     }
   },
   tablet: {
@@ -343,7 +350,7 @@ export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', 
 export const referenceJourneyPreviewCard: ReferenceJourneyPreviewCardData = {
   brand: 'tourist',
   badge: 'FREE',
-  avatar: avatarAlex,
+  avatar: referenceJourneyAvatar,
   name: 'Alex Henderson',
   handle: '@alexplorer',
   summary: 'Explorer across continents. Mountain hiker, scuba lover. Currently based in Barcelona.',
