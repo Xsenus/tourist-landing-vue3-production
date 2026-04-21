@@ -39,10 +39,10 @@ defineProps<{
   display: flex;
   flex-direction: column;
   min-height: 0;
-  padding: 16px 18px 19px;
-  border: 4px solid #172329;
+  padding: 13px 16px 16px;
+  border: 5px solid #172329;
   border-radius: 28px;
-  background: linear-gradient(180deg, #2ec38f 0%, #13895b 100%);
+  background: linear-gradient(180deg, #28a774 0%, #169261 100%);
   box-shadow: 0 26px 44px rgba(15, 23, 42, 0.12);
   color: #ffffff;
   overflow: hidden;
@@ -67,87 +67,87 @@ defineProps<{
 
 .reference-tourist-card__label {
   width: 100%;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-align: right;
 }
 
 .reference-tourist-card__avatar-shell {
-  width: 142px;
-  height: 142px;
-  margin: 18px 0 0 2px;
+  width: 122px;
+  height: 122px;
+  margin: 16px 0 0 6px;
   border-radius: 50%;
   background: radial-gradient(circle at 54% 50%, #8fd5ff 0 68%, transparent 68%);
 }
 
 .reference-tourist-card__avatar {
-  width: 110px;
-  height: 110px;
-  margin: 16px 0 0 14px;
+  width: 96px;
+  height: 96px;
+  margin: 13px 0 0 13px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 12px 24px rgba(15, 23, 42, 0.14);
 }
 
 .reference-tourist-card__identity {
-  margin-top: 8px;
-  padding-left: 6px;
+  margin-top: 10px;
+  padding-left: 4px;
 }
 
 .reference-tourist-card__name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -0.045em;
 }
 
 .reference-tourist-card__handle {
-  margin-top: 4px;
-  font-size: 15px;
+  margin-top: 6px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1.08;
   opacity: 0.92;
 }
 
 .reference-tourist-card__qr {
-  width: 128px;
-  height: 128px;
-  margin: 22px 0 0 4px;
+  width: 112px;
+  height: 112px;
+  margin: 20px 0 0 8px;
   border-radius: 14px;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
-    linear-gradient(rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 11px, transparent 11px) 0 0 / 18px 18px,
+    linear-gradient(rgba(255, 255, 255, 0.98) 11px, transparent 11px) 0 0 / 18px 18px,
     linear-gradient(90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
 }
 
 .reference-tourist-card__qr-box {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  border: 5px solid rgba(12, 14, 20, 0.96);
+  width: 24px;
+  height: 24px;
+  border: 4px solid rgba(12, 14, 20, 0.96);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.98);
 }
 
 .reference-tourist-card__qr-box--tl {
-  top: 9px;
-  left: 9px;
+  top: 8px;
+  left: 8px;
 }
 
 .reference-tourist-card__qr-box--tr {
-  top: 9px;
-  right: 9px;
+  top: 8px;
+  right: 8px;
 }
 
 .reference-tourist-card__qr-box--bl {
-  left: 9px;
-  bottom: 9px;
+  left: 8px;
+  bottom: 8px;
 }
 
 .reference-tourist-card__qr-noise {
   position: absolute;
-  inset: 22px;
+  inset: 18px;
   background:
     radial-gradient(circle at 15% 18%, rgba(12, 14, 20, 0.95) 0 8px, transparent 9px),
     radial-gradient(circle at 48% 62%, rgba(12, 14, 20, 0.95) 0 6px, transparent 7px),
@@ -161,8 +161,8 @@ defineProps<{
 
 .reference-tourist-card__footer {
   margin-top: auto;
-  padding: 22px 0 0 6px;
-  font-size: 11px;
+  padding: 18px 0 0 4px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -170,7 +170,7 @@ defineProps<{
 .reference-tourist-card__footer strong {
   display: block;
   margin-top: 4px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1;
   letter-spacing: -0.04em;
 }

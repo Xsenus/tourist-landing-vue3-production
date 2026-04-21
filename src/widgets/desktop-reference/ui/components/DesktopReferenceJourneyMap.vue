@@ -38,9 +38,9 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 <style scoped>
 .desktop-reference-journey-map__preview {
   position: absolute;
-  top: 65px;
+  top: 101px;
   left: 1000px;
-  width: 242px;
+  width: 252px;
   z-index: 301;
 }
 
@@ -52,16 +52,16 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 
 .desktop-reference-journey-map__note {
   position: absolute;
-  left: 296px;
-  top: 429px;
-  width: 146px;
+  left: 286px;
+  top: 399px;
+  width: 149px;
   z-index: 304;
-  color: #17243b;
+  color: #18365b;
   font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
   font-size: 20px;
   font-weight: 700;
-  line-height: 0.98;
-  transform: rotate(-8deg);
+  line-height: 0.94;
+  transform: rotate(-7deg);
   transform-origin: left top;
 }
 
@@ -72,13 +72,13 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 .desktop-reference-journey-map__note::after {
   content: '';
   position: absolute;
-  right: -57px;
-  top: 16px;
-  width: 54px;
-  height: 30px;
+  right: -48px;
+  top: 20px;
+  width: 58px;
+  height: 38px;
   border-top: 3px solid #2b9b5f;
   border-right: 3px solid #2b9b5f;
-  border-radius: 0 18px 0 0;
-  transform: rotate(28deg);
+  border-radius: 0 24px 0 0;
+  transform: rotate(34deg);
 }
 </style>

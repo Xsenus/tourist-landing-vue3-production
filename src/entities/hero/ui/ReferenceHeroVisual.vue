@@ -89,13 +89,14 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 
 .reference-hero-visual__phone {
   position: relative;
+  filter: drop-shadow(0 28px 40px rgba(41, 74, 126, 0.16));
 }
 
 .reference-hero-visual__phone-screen {
   position: absolute;
   inset: 3.4% 4.1%;
   overflow: hidden;
-  border-radius: 34px;
+  border-radius: 36px;
   background: #ffffff;
 }
 
@@ -134,6 +135,7 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 
 .reference-hero-visual__badge {
   position: absolute;
+  transform-origin: top left;
 }
 
 .reference-hero-visual__scribble {
@@ -142,32 +144,23 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
   color: #12181c;
   font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
   font-weight: 700;
-  line-height: 1.06;
+  line-height: 0.98;
   white-space: pre-line;
+  transform: rotate(-8deg);
+  transform-origin: left top;
 }
 
 .reference-hero-visual__scribble::before {
   content: '';
   position: absolute;
-  left: -48px;
-  top: -4px;
-  width: 42px;
-  height: 24px;
-  border-left: 3px solid #12181c;
-  border-bottom: 3px solid #12181c;
-  border-radius: 0 0 0 20px;
-  transform: rotate(-30deg);
-}
-
-.reference-hero-visual__scribble::after {
-  content: '';
-  position: absolute;
-  left: 12px;
-  top: calc(100% + 2px);
-  width: 84px;
-  height: 20px;
-  border-top: 3px solid #f35e22;
-  border-radius: 50%;
+  left: -34px;
+  top: 12px;
+  width: 34px;
+  height: 54px;
+  border-left: 4px solid #12181c;
+  border-bottom: 4px solid #12181c;
+  border-radius: 0 0 0 30px;
+  transform: rotate(48deg);
 }
 
 .reference-hero-visual :deep(.phone-ui) {
@@ -214,18 +207,18 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 
 .reference-hero-visual :deep(.phone-ui__feature) {
   margin-top: 14px;
-  min-height: 174px;
-  border-radius: 20px;
+  min-height: 181px;
+  border-radius: 23px;
 }
 
 .reference-hero-visual :deep(.phone-ui__feature img) {
-  height: 174px;
+  height: 181px;
 }
 
 .reference-hero-visual :deep(.phone-ui__feature-copy) {
   left: 14px;
-  right: 70px;
-  bottom: 15px;
+  right: 66px;
+  bottom: 17px;
 }
 
 .reference-hero-visual :deep(.phone-ui__feature-copy small) {
@@ -234,25 +227,25 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 }
 
 .reference-hero-visual :deep(.phone-ui__feature-copy span) {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .reference-hero-visual :deep(.phone-ui__feature-copy strong) {
-  margin-top: 11px;
+  margin-top: 12px;
   font-size: 14px;
-  line-height: 1.16;
+  line-height: 1.18;
 }
 
 .reference-hero-visual :deep(.phone-ui__feature-badge) {
-  top: 12px;
-  right: 12px;
+  top: 14px;
+  right: 14px;
   min-height: 36px;
   border-radius: 11px;
   font-size: 10px;
 }
 
 .reference-hero-visual :deep(.phone-ui__section-head strong) {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .reference-hero-visual :deep(.phone-ui__section-head small) {
@@ -260,17 +253,17 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 }
 
 .reference-hero-visual :deep(.phone-ui__tiles) {
-  gap: 7px;
+  gap: 8px;
   margin-top: 10px;
 }
 
 .reference-hero-visual :deep(.phone-ui__tile) {
-  min-height: 128px;
-  border-radius: 12px;
+  min-height: 130px;
+  border-radius: 16px;
 }
 
 .reference-hero-visual :deep(.phone-ui__tile-copy) {
-  inset: auto 9px 7px 9px;
+  inset: auto 10px 8px 10px;
 }
 
 .reference-hero-visual :deep(.phone-ui__tile-copy strong) {

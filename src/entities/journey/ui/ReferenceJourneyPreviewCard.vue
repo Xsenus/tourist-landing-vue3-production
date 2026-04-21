@@ -44,8 +44,8 @@ defineProps<{
   gap: 8px;
   padding: 10px;
   border-radius: 30px;
-  background: linear-gradient(180deg, #41352b 0%, #26201a 100%);
-  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.18);
+  background: linear-gradient(180deg, #47372b 0%, #231b15 100%);
+  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.16);
   overflow: hidden;
 }
 
@@ -60,7 +60,7 @@ defineProps<{
   align-items: center;
   gap: 6px;
   color: #14c7ac;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: -0.04em;
 }
@@ -69,9 +69,9 @@ defineProps<{
   min-height: 20px;
   padding: 0 8px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.3);
   color: #ffffff;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 20px;
   letter-spacing: 0.06em;
 }
@@ -82,7 +82,7 @@ defineProps<{
   height: 28px;
   border: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .reference-journey-preview-card__share::before,
@@ -118,46 +118,46 @@ defineProps<{
 .reference-journey-preview-card__portrait {
   display: block;
   width: 100%;
-  height: 260px;
+  height: 258px;
   object-fit: cover;
 }
 
 .reference-journey-preview-card__shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(12, 18, 28, 0.02) 0%, rgba(12, 18, 28, 0.68) 100%);
+  background: linear-gradient(180deg, rgba(12, 18, 28, 0.02) 0%, rgba(12, 18, 28, 0.74) 100%);
 }
 
 .reference-journey-preview-card__copy {
   position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 48px;
+  left: 14px;
+  right: 14px;
+  bottom: 56px;
   color: #ffffff;
 }
 
 .reference-journey-preview-card__copy h3 {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 0.92;
   letter-spacing: -0.04em;
 }
 
 .reference-journey-preview-card__copy p {
-  margin: 7px 0 0;
-  font-size: 12px;
+  margin: 8px 0 0;
+  font-size: 11px;
   line-height: 1.34;
   color: rgba(255, 255, 255, 0.76);
 }
 
 .reference-journey-preview-card__cta {
-  min-height: 40px;
+  min-height: 57px;
   border: 0;
-  border-radius: 12px;
-  background: #14c7ac;
+  border-radius: 14px;
+  background: #13c0ab;
   color: #ffffff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -171,7 +171,7 @@ defineProps<{
   padding: 0 13px;
   min-height: 38px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(10px);
 }
 
@@ -184,7 +184,7 @@ defineProps<{
 .reference-journey-preview-card__map img {
   display: block;
   width: 100%;
-  height: 100px;
+  height: 94px;
   object-fit: cover;
 }
 </style>

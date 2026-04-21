@@ -27,3 +27,10 @@
     </a>
   </div>
 </template>
+
+<style scoped>
+.nbsp {
+  display: inline-block;
+  width: 0.28em;
+}
+</style>

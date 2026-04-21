@@ -1,5 +1,5 @@
 <template>
-  <DesktopReferencePage v-if="screenMode === 'desktop'" />
+  <DesktopReferenceViewport v-if="screenMode === 'desktop'" />
 
   <MobileReferencePage v-else-if="screenMode === 'mobile'" />
 
@@ -11,8 +11,8 @@ import { defineAsyncComponent, onBeforeUnmount, onMounted, ref } from 'vue';
 
 type ScreenMode = 'desktop' | 'tablet' | 'mobile';
 
-const DesktopReferencePage = defineAsyncComponent(
-  () => import('@/widgets/desktop-reference/ui/DesktopReferencePage.vue')
+const DesktopReferenceViewport = defineAsyncComponent(
+  () => import('@/widgets/desktop-reference/ui/DesktopReferenceViewport.vue')
 );
 const TabletReferencePage = defineAsyncComponent(
   () => import('@/widgets/tablet-reference/ui/TabletReferencePage.vue')

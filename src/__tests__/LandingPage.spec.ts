@@ -2,6 +2,7 @@ import { flushPromises, mount } from '@vue/test-utils';
 import { afterEach, describe, expect, it } from 'vitest';
 
 import DesktopReferencePage from '@/widgets/desktop-reference/ui/DesktopReferencePage.vue';
+import DesktopReferenceViewport from '@/widgets/desktop-reference/ui/DesktopReferenceViewport.vue';
 import MobileReferencePage from '@/widgets/mobile-reference/ui/MobileReferencePage.vue';
 import LandingPage from '@/pages/landing/ui/LandingPage.vue';
 import TabletReferencePage from '@/widgets/tablet-reference/ui/TabletReferencePage.vue';
@@ -55,6 +56,21 @@ describe('LandingPage', () => {
     expect(wrapper.find('[data-layout-mode="tablet"]').exists()).toBe(true);
     expect(wrapper.find('[data-design-element="tablet-page"]').exists()).toBe(true);
     expect(wrapper.find('[data-figma-node="21:14"]').exists()).toBe(true);
+  });
+
+  it('scales the desktop canvas to fit narrower desktop viewports', async () => {
+    setViewportWidth(1440);
+    const wrapper = mount(DesktopReferenceViewport);
+    await flushPromises();
+
+    expect(wrapper.find('[data-design-element="desktop-page-fit"]').exists()).toBe(true);
+    expect(wrapper.find('[data-figma-node="21:14"]').exists()).toBe(true);
+    expect(wrapper.find('[data-design-element="desktop-page-fit-canvas"]').attributes('style')).toContain(
+      'transform: scale('
+    );
+    expect(wrapper.find('[data-design-element="desktop-page-fit-canvas"]').attributes('style')).not.toContain(
+      'transform: scale(1)'
+    );
   });
 
   it('renders the mobile figma-aligned branch with inspectable hooks', async () => {

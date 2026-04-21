@@ -214,47 +214,47 @@ export const referenceIdentityStackConfig: ReferenceIdentityStackConfig = {
 
 export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', ReferenceHeroVisualConfig> = {
   desktop: {
-    width: '804px',
-    height: '706px',
+    width: '790px',
+    height: '720px',
     backPhone: {
-      top: '110px',
-      left: '80px',
-      width: '178px',
-      rotate: '-13.2deg',
+      top: '126px',
+      left: '18px',
+      width: '196px',
+      rotate: '-12.8deg',
       zIndex: 1
     },
     frontPhone: {
-      top: '-6px',
-      left: '204px',
-      width: '268px',
+      top: '22px',
+      left: '176px',
+      width: '302px',
       zIndex: 3
     },
     card: {
-      top: '52px',
-      right: '4px',
-      width: '384px',
-      rotate: '6.9deg',
+      top: '78px',
+      left: '468px',
+      width: '328px',
+      rotate: '6.8deg',
       zIndex: 2
     },
     badges: {
       top: {
-        top: '254px',
-        right: '28px',
-        width: '166px',
+        top: '226px',
+        left: '604px',
+        width: '177px',
         zIndex: 4
       },
       bottom: {
-        top: '378px',
-        right: '150px',
-        width: '212px',
+        top: '314px',
+        left: '561px',
+        width: '170px',
         zIndex: 4
       }
     },
     scribble: {
-      right: '0px',
-      bottom: '56px',
-      width: '190px',
-      fontSize: '18px'
+      right: '-6px',
+      bottom: '8px',
+      width: '146px',
+      fontSize: '20px'
     }
   },
   tablet: {
@@ -354,7 +354,7 @@ export const referenceJourneyPreviewCard: ReferenceJourneyPreviewCardData = {
   name: 'Alex Henderson',
   handle: '@alexplorer',
   summary: 'Explorer across continents. Mountain hiker, scuba lover. Currently based in Barcelona.',
-  actions: ['Contact', 'Save contact', 'Call me'],
+  actions: ['Exchange contact', 'Save contact', 'Call me'],
   footerMap: journeyMapFig
 };
 
