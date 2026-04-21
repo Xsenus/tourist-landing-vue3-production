@@ -41,11 +41,11 @@ defineProps<{
 .reference-journey-preview-card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 14px;
+  gap: 8px;
+  padding: 10px;
   border-radius: 30px;
-  background: linear-gradient(180deg, #2f261d 0%, #1f1a16 100%);
-  box-shadow: 0 24px 44px rgba(15, 23, 42, 0.2);
+  background: linear-gradient(180deg, #41352b 0%, #26201a 100%);
+  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.18);
   overflow: hidden;
 }
 
@@ -58,21 +58,21 @@ defineProps<{
 .reference-journey-preview-card__brand {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   color: #14c7ac;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: -0.04em;
 }
 
 .reference-journey-preview-card__badge {
-  min-height: 22px;
+  min-height: 20px;
   padding: 0 8px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.18);
   color: #ffffff;
   font-size: 10px;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0.06em;
 }
 
@@ -82,7 +82,7 @@ defineProps<{
   height: 28px;
   border: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .reference-journey-preview-card__share::before,
@@ -92,8 +92,8 @@ defineProps<{
 }
 
 .reference-journey-preview-card__share::before {
-  left: 10px;
-  top: 8px;
+  left: 9px;
+  top: 7px;
   width: 8px;
   height: 8px;
   border-top: 2px solid #ffffff;
@@ -101,8 +101,8 @@ defineProps<{
 }
 
 .reference-journey-preview-card__share::after {
-  left: 14px;
-  top: 7px;
+  left: 13px;
+  top: 6px;
   width: 2px;
   height: 12px;
   background: #ffffff;
@@ -118,45 +118,45 @@ defineProps<{
 .reference-journey-preview-card__portrait {
   display: block;
   width: 100%;
-  height: 250px;
+  height: 260px;
   object-fit: cover;
 }
 
 .reference-journey-preview-card__shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(12, 18, 28, 0.04) 0%, rgba(12, 18, 28, 0.74) 100%);
+  background: linear-gradient(180deg, rgba(12, 18, 28, 0.02) 0%, rgba(12, 18, 28, 0.68) 100%);
 }
 
 .reference-journey-preview-card__copy {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: 54px;
+  bottom: 48px;
   color: #ffffff;
 }
 
 .reference-journey-preview-card__copy h3 {
   margin: 0;
   font-size: 28px;
-  line-height: 1;
+  line-height: 0.92;
   letter-spacing: -0.04em;
 }
 
 .reference-journey-preview-card__copy p {
-  margin: 10px 0 0;
-  font-size: 13px;
+  margin: 7px 0 0;
+  font-size: 12px;
   line-height: 1.34;
   color: rgba(255, 255, 255, 0.76);
 }
 
 .reference-journey-preview-card__cta {
-  min-height: 42px;
+  min-height: 40px;
   border: 0;
   border-radius: 12px;
   background: #14c7ac;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -168,8 +168,8 @@ defineProps<{
   bottom: 12px;
   display: inline-flex;
   align-items: center;
-  padding: 0 14px;
-  min-height: 40px;
+  padding: 0 13px;
+  min-height: 38px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
@@ -177,14 +177,14 @@ defineProps<{
 
 .reference-journey-preview-card__map {
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 16px;
   background: #ffffff;
 }
 
 .reference-journey-preview-card__map img {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 100px;
   object-fit: cover;
 }
 </style>

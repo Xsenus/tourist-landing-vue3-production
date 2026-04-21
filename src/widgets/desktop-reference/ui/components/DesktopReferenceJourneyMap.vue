@@ -38,28 +38,31 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 <style scoped>
 .desktop-reference-journey-map__preview {
   position: absolute;
-  top: 112px;
-  left: 1116px;
-  width: 224px;
+  top: 65px;
+  left: 1000px;
+  width: 242px;
   z-index: 301;
 }
 
 .desktop-reference-journey-map__preview :deep(.reference-journey-preview-card) {
   width: 100%;
-  min-height: 476px;
+  min-height: 483px;
+  border-radius: 30px;
 }
 
 .desktop-reference-journey-map__note {
   position: absolute;
-  left: 292px;
-  top: 416px;
+  left: 296px;
+  top: 429px;
+  width: 146px;
   z-index: 304;
   color: #17243b;
   font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.05;
-  transform: rotate(-9deg);
+  line-height: 0.98;
+  transform: rotate(-8deg);
+  transform-origin: left top;
 }
 
 .desktop-reference-journey-map__note span {
@@ -69,13 +72,13 @@ import ReferenceJourneyPreviewCard from '@/entities/journey/ui/ReferenceJourneyP
 .desktop-reference-journey-map__note::after {
   content: '';
   position: absolute;
-  right: -74px;
-  top: 18px;
-  width: 68px;
-  height: 34px;
-  border-top: 4px solid #2b9b5f;
-  border-right: 4px solid #2b9b5f;
-  border-radius: 0 24px 0 0;
-  transform: rotate(26deg);
+  right: -57px;
+  top: 16px;
+  width: 54px;
+  height: 30px;
+  border-top: 3px solid #2b9b5f;
+  border-right: 3px solid #2b9b5f;
+  border-radius: 0 18px 0 0;
+  transform: rotate(28deg);
 }
 </style>

@@ -1782,10 +1782,10 @@ button {
 }
 .frame-49 {
   position: absolute;
-  width: 345px;
-  height: 397px;
-  top: 51px;
-  left: 538px;
+  width: 352px;
+  height: 402px;
+  top: 46px;
+  left: 528px;
   z-index: 144;
   overflow: hidden;
 }
@@ -2072,10 +2072,10 @@ button {
 }
 .flex-column-ab {
   position: absolute;
-  width: 273.5px;
-  height: 386px;
-  top: 55px;
-  left: 983px;
+  width: 286px;
+  height: 392px;
+  top: 49px;
+  left: 974px;
   z-index: 171;
 }
 .group-4f {
@@ -2090,8 +2090,8 @@ button {
 }
 .rectangle-50 {
   position: relative;
-  width: 243px;
-  height: 79px;
+  width: 249px;
+  height: 82px;
   margin: 1.443px 0 0 0;
   background: rgba(255, 255, 255, 0.86);
   z-index: 158;
@@ -2107,8 +2107,8 @@ button {
   flex-wrap: nowrap;
   gap: 8px;
   position: relative;
-  width: 202.898px;
-  margin: 12px 0 0 15px;
+  width: 210px;
+  margin: 13px 0 0 16px;
   z-index: 159;
 }
 .iconamoon-shield-yes-fill-52 {
@@ -2201,9 +2201,9 @@ button {
 }
 .rectangle-55 {
   position: relative;
-  width: 272px;
-  height: 151px;
-  margin: 126.557px 0 0 0;
+  width: 278px;
+  height: 154px;
+  margin: 118px 0 0 0;
   background: rgba(255, 255, 255, 0.86);
   z-index: 171;
   overflow: visible auto;
@@ -2422,11 +2422,11 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 1px;
+  gap: 8px;
   position: absolute;
-  width: 137px;
-  height: 45px;
-  top: 126px;
+  width: 214px;
+  height: 46px;
+  top: 128px;
   left: 0;
   z-index: 165;
 }
@@ -3403,10 +3403,10 @@ button {
 }
 .rectangle-93 {
   position: absolute;
-  width: 320px;
-  height: 616px;
+  width: 344px;
+  height: 618px;
   top: 34px;
-  left: 806px;
+  left: 800px;
   overflow: hidden;
   isolation: isolate;
   background: #f5f6fa;
@@ -3418,25 +3418,25 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 59px;
+  gap: 73px;
   position: relative;
-  width: 281px;
-  margin: 539px 0 0 20px;
-  padding: 14px 27px 14px 27px;
+  width: 300px;
+  margin: 540px 0 0 22px;
+  padding: 16px 28px 16px 28px;
   background: #dbe4f2;
   z-index: 351;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .show-all-countries {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
-  height: 26px;
+  height: 29px;
   color: #1370e4;
   font-family: Heebo, var(--default-font-family);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 29px;
   text-align: left;
   white-space: nowrap;
   z-index: 352;
@@ -3456,25 +3456,25 @@ button {
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: nowrap;
-  gap: 19px;
+  gap: 21px;
   position: absolute;
-  width: 280px;
-  height: 441px;
-  top: 28px;
-  left: 20px;
+  width: 300px;
+  height: 446px;
+  top: 30px;
+  left: 22px;
   z-index: 319;
 }
 .group-97 {
   flex-shrink: 0;
   position: relative;
-  width: 280px;
-  height: 81px;
+  width: 300px;
+  height: 84px;
   z-index: 320;
 }
 .group-98 {
   position: absolute;
-  width: 230px;
-  height: 81px;
+  width: 248px;
+  height: 84px;
   top: 0;
   left: 0;
   z-index: 321;
@@ -3485,10 +3485,10 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: absolute;
-  width: 182px;
-  height: 81px;
+  width: 196px;
+  height: 84px;
   top: 0;
-  left: 48px;
+  left: 52px;
   z-index: 323;
 }
 .germany {
@@ -3512,9 +3512,9 @@ button {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
-  width: 182px;
+  width: 196px;
   min-width: 0;
-  height: 52px;
+  height: 55px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 16px;
@@ -3545,7 +3545,7 @@ button {
   position: absolute;
   height: 22px;
   top: 5px;
-  left: 226px;
+  left: 248px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 14px;
@@ -3568,14 +3568,14 @@ button {
 .group-9c {
   flex-shrink: 0;
   position: relative;
-  width: 280px;
-  height: 81px;
+  width: 300px;
+  height: 84px;
   z-index: 328;
 }
 .group-9d {
   position: absolute;
-  width: 230px;
-  height: 81px;
+  width: 248px;
+  height: 84px;
   top: 0;
   left: 0;
   z-index: 329;
@@ -3586,10 +3586,10 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: absolute;
-  width: 182px;
-  height: 81px;
+  width: 196px;
+  height: 84px;
   top: 0;
-  left: 48px;
+  left: 52px;
   z-index: 331;
 }
 .italy {
@@ -3613,9 +3613,9 @@ button {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
-  width: 182px;
+  width: 196px;
   min-width: 0;
-  height: 52px;
+  height: 55px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 16px;
@@ -3646,7 +3646,7 @@ button {
   position: absolute;
   height: 22px;
   top: 5px;
-  left: 226px;
+  left: 248px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 14px;
@@ -3669,14 +3669,14 @@ button {
 .group-a1 {
   flex-shrink: 0;
   position: relative;
-  width: 280px;
-  height: 81px;
+  width: 300px;
+  height: 84px;
   z-index: 336;
 }
 .group-a2 {
   position: absolute;
-  width: 230px;
-  height: 81px;
+  width: 248px;
+  height: 84px;
   top: 0;
   left: 0;
   z-index: 337;
@@ -3687,10 +3687,10 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: absolute;
-  width: 182px;
-  height: 81px;
+  width: 196px;
+  height: 84px;
   top: 0;
-  left: 48px;
+  left: 52px;
   z-index: 339;
 }
 .japan {
@@ -3714,9 +3714,9 @@ button {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
-  width: 182px;
+  width: 196px;
   min-width: 0;
-  height: 52px;
+  height: 55px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 16px;
@@ -3747,7 +3747,7 @@ button {
   position: absolute;
   height: 22px;
   top: 5px;
-  left: 226px;
+  left: 248px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 14px;
@@ -3770,14 +3770,14 @@ button {
 .group-a6 {
   flex-shrink: 0;
   position: relative;
-  width: 280px;
-  height: 81px;
+  width: 300px;
+  height: 84px;
   z-index: 344;
 }
 .group-a7 {
   position: absolute;
-  width: 230px;
-  height: 81px;
+  width: 248px;
+  height: 84px;
   top: 0;
   left: 0;
   z-index: 345;
@@ -3788,10 +3788,10 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: absolute;
-  width: 182px;
-  height: 81px;
+  width: 196px;
+  height: 84px;
   top: 0;
-  left: 48px;
+  left: 52px;
   z-index: 347;
 }
 .united-states {
@@ -3815,9 +3815,9 @@ button {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
-  width: 182px;
+  width: 196px;
   min-width: 0;
-  height: 52px;
+  height: 55px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 16px;
@@ -3848,7 +3848,7 @@ button {
   position: absolute;
   height: 22px;
   top: 5px;
-  left: 226px;
+  left: 248px;
   color: #12181c;
   font-family: Heebo, var(--default-font-family);
   font-size: 14px;

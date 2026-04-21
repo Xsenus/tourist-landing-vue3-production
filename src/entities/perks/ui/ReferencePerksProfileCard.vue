@@ -140,7 +140,7 @@ const cardStyle = computed(() => {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .reference-perks-profile-card__avatar {
@@ -153,7 +153,7 @@ const cardStyle = computed(() => {
 }
 
 .reference-perks-profile-card__name {
-  margin-top: 14px;
+  margin-top: 12px;
   color: #12181c;
   font-family: Heebo, sans-serif;
   font-size: var(--reference-perks-name-size);
@@ -165,7 +165,7 @@ const cardStyle = computed(() => {
 }
 
 .reference-perks-profile-card__meta {
-  margin-top: 8px;
+  margin-top: 7px;
   color: #53565c;
   font-family: Heebo, sans-serif;
   font-size: var(--reference-perks-meta-size);
@@ -179,8 +179,8 @@ const cardStyle = computed(() => {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
-  margin-top: 24px;
-  padding: 0 10px;
+  margin-top: 22px;
+  padding: 0 8px;
 }
 
 .reference-perks-profile-card__stat {
@@ -222,15 +222,15 @@ const cardStyle = computed(() => {
 .reference-perks-profile-card__gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
+  gap: 8px;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 17px;
 }
 
 .reference-perks-profile-card__gallery-item {
   height: var(--reference-perks-gallery-height);
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 15px;
   background: #e8dccf;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }

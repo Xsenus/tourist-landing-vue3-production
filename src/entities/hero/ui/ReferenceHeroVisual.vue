@@ -99,6 +99,23 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
   background: #ffffff;
 }
 
+.reference-hero-visual__phone-screen::before {
+  content: none;
+}
+
+.reference-hero-visual__phone--front .reference-hero-visual__phone-screen::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 78px;
+  height: 20px;
+  border-radius: 999px;
+  background: #05070a;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
 .reference-hero-visual__phone-screen--map {
   border-radius: 30px;
   background: linear-gradient(180deg, #f9fbff 0%, #eef5fb 100%);
@@ -274,6 +291,12 @@ const layerStyle = (layer: ReferenceLayerLayout) => ({
 
 .reference-hero-visual--mobile :deep(.phone-ui) {
   padding: 7px 7px 9px;
+}
+
+.reference-hero-visual--mobile .reference-hero-visual__phone--front .reference-hero-visual__phone-screen::before {
+  top: 5px;
+  width: 36px;
+  height: 10px;
 }
 
 .reference-hero-visual--mobile :deep(.phone-ui__brand strong) {

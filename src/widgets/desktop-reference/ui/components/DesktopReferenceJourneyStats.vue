@@ -43,19 +43,37 @@ import TravelersBoard from '@/entities/journey/ui/TravelersBoard.vue';
 .desktop-reference-journey-stats__travelers :deep(.travelers-board) {
   width: 100%;
   height: 100%;
-  padding: 18px 22px;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 11px 19px;
   border-radius: 19px;
   background: #f5f6fa;
   box-shadow: none;
 }
 
+.desktop-reference-journey-stats__travelers :deep(.avatar-stack) {
+  padding-left: 12px;
+}
+
+.desktop-reference-journey-stats__travelers :deep(.avatar-stack__item) {
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: -12px !important;
+}
+
+.desktop-reference-journey-stats__travelers :deep(.travelers-board__copy) {
+  max-width: 176px;
+}
+
 .desktop-reference-journey-stats__travelers :deep(.travelers-board__copy strong) {
-  font-size: 22px;
+  font-size: 23px;
+  line-height: 1.05;
+  white-space: nowrap;
 }
 
 .desktop-reference-journey-stats__travelers :deep(.travelers-board__copy small) {
-  margin-top: 7px;
+  margin-top: 4px;
   font-size: 16px;
-  line-height: 1.42;
+  line-height: 1.33;
 }
 </style>
