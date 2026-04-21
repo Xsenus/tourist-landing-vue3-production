@@ -20,6 +20,7 @@ import dealFood from '@/shared/assets/images/deal-food.jpg';
 import dealStreetFig from '@/shared/assets/images/deal-street-fig.png';
 import dealStreet from '@/shared/assets/images/deal-street.jpg';
 import heroBackground from '@/shared/assets/images/hero-bg.jpg';
+import heroCardQrRefTight from '@/shared/assets/images/hero-card-qr-ref-tight.png';
 import heroMapScreenFig from '@/shared/assets/images/hero-map-screen-fig.png';
 import journeyMapFig from '@/shared/assets/images/journey-map-fig.png';
 import mapArt from '@/shared/assets/images/map-art.png';
@@ -56,6 +57,7 @@ export {
   dealFood,
   dealStreet,
   heroBackground,
+  heroCardQrRefTight,
   heroMapScreenFig,
   journeyMapFig,
   mapArt,

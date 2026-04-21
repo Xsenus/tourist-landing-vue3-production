@@ -20,20 +20,20 @@ defineProps<{
 .reference-hero-badge {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 13px;
   min-width: 0;
-  padding: 14px 12px 14px 10px;
-  border-radius: 11px;
-  background: rgba(238, 238, 238, 0.84);
-  backdrop-filter: blur(6.6px);
-  box-shadow: 0 16px 28px rgba(15, 23, 42, 0.08);
+  padding: 15px 16px 15px 13px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(247, 249, 248, 0.95), rgba(233, 237, 241, 0.92));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
 }
 
 .reference-hero-badge__icon {
   position: relative;
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 
 .reference-hero-badge__icon::before,
@@ -86,9 +86,9 @@ defineProps<{
 
 .reference-hero-badge__copy strong {
   color: #12181c;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.16;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.12;
   white-space: nowrap;
 }
 

@@ -225,35 +225,35 @@ export const referenceHeroVisualConfig: Record<'desktop' | 'tablet' | 'mobile', 
     },
     frontPhone: {
       top: '22px',
-      left: '176px',
-      width: '302px',
+      left: '170px',
+      width: '288px',
       zIndex: 3
     },
     card: {
-      top: '72px',
-      left: '476px',
-      width: '346px',
-      rotate: '6.8deg',
+      top: '56px',
+      right: '8px',
+      width: '368px',
+      rotate: '6.9deg',
       zIndex: 2
     },
     badges: {
       top: {
-        top: '226px',
-        left: '622px',
-        width: '177px',
+        top: '246px',
+        right: '18px',
+        width: '190px',
         zIndex: 4
       },
       bottom: {
-        top: '324px',
-        left: '579px',
-        width: '170px',
+        top: '430px',
+        right: '92px',
+        width: '228px',
         zIndex: 4
       }
     },
     scribble: {
-      right: '-6px',
-      bottom: '8px',
-      width: '146px',
+      right: '0px',
+      bottom: '44px',
+      width: '176px',
       fontSize: '20px'
     }
   },

@@ -1,5 +1,6 @@
 <template>
   <article class="reference-tourist-card">
+    <span class="reference-tourist-card__marker" aria-hidden="true"></span>
     <div class="reference-tourist-card__label">TOURIST CARD</div>
 
     <div class="reference-tourist-card__avatar-shell">
@@ -11,12 +12,7 @@
       <div class="reference-tourist-card__handle">{{ card.handle }}</div>
     </div>
 
-    <div class="reference-tourist-card__qr" aria-hidden="true">
-      <span class="reference-tourist-card__qr-box reference-tourist-card__qr-box--tl"></span>
-      <span class="reference-tourist-card__qr-box reference-tourist-card__qr-box--tr"></span>
-      <span class="reference-tourist-card__qr-box reference-tourist-card__qr-box--bl"></span>
-      <span class="reference-tourist-card__qr-noise"></span>
-    </div>
+    <img class="reference-tourist-card__qr" :src="heroCardQrRefTight" alt="" aria-hidden="true" />
 
     <div class="reference-tourist-card__footer">
       <span>MEMBER SINCE</span>
@@ -26,6 +22,7 @@
 </template>
 
 <script setup lang="ts">
+import { heroCardQrRefTight } from '@/shared/assets/images';
 import type { HeroMemberCardContent } from '@/pages/landing/model/landing.types';
 
 defineProps<{
@@ -36,15 +33,15 @@ defineProps<{
 <style scoped>
 .reference-tourist-card {
   position: absolute;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 404 / 977;
   min-height: 0;
-  padding: 15px 18px 18px 14px;
-  border: 5px solid #18292f;
-  border-radius: 31px;
-  background: linear-gradient(180deg, #26b07b 0%, #1a9d69 100%);
+  border: 1.05cqw solid #18292f;
+  border-radius: 7.8cqw;
+  background: linear-gradient(137deg, #1f9868 0%, #22b77e 100%);
   box-shadow: 0 24px 40px rgba(15, 23, 42, 0.12);
   color: #ffffff;
+  container-type: inline-size;
   overflow: hidden;
 }
 
@@ -52,41 +49,55 @@ defineProps<{
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0) 36%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0) 34%);
   pointer-events: none;
+}
+
+.reference-tourist-card__marker {
+  position: absolute;
+  top: 4.8cqw;
+  left: 4.4cqw;
+  width: 2.6cqw;
+  height: 2.6cqw;
+  border: 0.42cqw solid rgba(171, 228, 206, 0.52);
+  border-radius: 50%;
 }
 
 .reference-tourist-card__label,
 .reference-tourist-card__identity,
 .reference-tourist-card__qr,
 .reference-tourist-card__footer,
-.reference-tourist-card__avatar-shell {
+.reference-tourist-card__avatar-shell,
+.reference-tourist-card__marker {
   position: relative;
   z-index: 1;
 }
 
 .reference-tourist-card__label {
-  width: 100%;
-  padding-right: 8px;
-  font-size: 11px;
+  position: absolute;
+  top: 8.9cqw;
+  right: 7.1cqw;
+  font-size: 3.45cqw;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-align: right;
-  opacity: 0.9;
+  opacity: 0.94;
 }
 
 .reference-tourist-card__avatar-shell {
-  width: 142px;
-  height: 142px;
-  margin: 18px 0 0 6px;
+  position: absolute;
+  top: 24.9cqw;
+  left: 7.6cqw;
+  width: 51.2cqw;
+  height: 51.2cqw;
   border-radius: 50%;
-  background: radial-gradient(circle at 54% 50%, #8fd5ff 0 69%, transparent 69%);
+  background: radial-gradient(circle at 54% 50%, #79baff 0 70%, transparent 70%);
 }
 
 .reference-tourist-card__avatar {
-  width: 112px;
-  height: 112px;
-  margin: 15px 0 0 14px;
+  width: 40.4cqw;
+  height: 40.4cqw;
+  margin: 5.4cqw 0 0 5.4cqw;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -94,82 +105,45 @@ defineProps<{
 }
 
 .reference-tourist-card__identity {
-  margin-top: 12px;
-  padding-left: 6px;
-  max-width: 176px;
+  position: absolute;
+  left: 10.8cqw;
+  top: 104.2cqw;
+  width: 50cqw;
 }
 
 .reference-tourist-card__name {
-  font-size: 24px;
+  font-size: 8.1cqw;
   font-weight: 800;
-  line-height: 0.98;
+  line-height: 0.96;
   letter-spacing: -0.045em;
+  white-space: nowrap;
 }
 
 .reference-tourist-card__handle {
-  margin-top: 6px;
-  font-size: 14px;
+  margin-top: 1.2cqw;
+  font-size: 4.45cqw;
   font-weight: 700;
   line-height: 1.08;
   opacity: 0.92;
 }
 
 .reference-tourist-card__qr {
-  width: 128px;
-  height: 128px;
-  margin: 22px 0 0 8px;
-  border-radius: 15px;
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
-    linear-gradient(rgba(255, 255, 255, 0.98) 13px, transparent 13px) 0 0 / 21px 21px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-}
-
-.reference-tourist-card__qr-box {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  border: 5px solid rgba(12, 14, 20, 0.94);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.98);
-}
-
-.reference-tourist-card__qr-box--tl {
-  top: 9px;
-  left: 9px;
-}
-
-.reference-tourist-card__qr-box--tr {
-  top: 9px;
-  right: 9px;
-}
-
-.reference-tourist-card__qr-box--bl {
-  left: 9px;
-  bottom: 9px;
-}
-
-.reference-tourist-card__qr-noise {
-  position: absolute;
-  inset: 22px;
-  background:
-    radial-gradient(circle at 15% 18%, rgba(12, 14, 20, 0.95) 0 8px, transparent 9px),
-    radial-gradient(circle at 48% 62%, rgba(12, 14, 20, 0.95) 0 6px, transparent 7px),
-    radial-gradient(circle at 68% 25%, rgba(12, 14, 20, 0.95) 0 5px, transparent 6px),
-    radial-gradient(circle at 74% 70%, rgba(12, 14, 20, 0.95) 0 8px, transparent 9px),
-    radial-gradient(circle at 36% 32%, rgba(12, 14, 20, 0.95) 0 5px, transparent 6px),
-    radial-gradient(circle at 56% 44%, rgba(12, 14, 20, 0.95) 0 4px, transparent 5px),
-    radial-gradient(circle at 26% 76%, rgba(12, 14, 20, 0.95) 0 7px, transparent 8px),
-    radial-gradient(circle at 84% 48%, rgba(12, 14, 20, 0.95) 0 5px, transparent 6px);
+  left: 4.7cqw;
+  top: 138.6cqw;
+  width: 46.6cqw;
+  height: auto;
+  display: block;
 }
 
 .reference-tourist-card__footer {
-  margin-top: auto;
+  position: absolute;
+  left: 5.1cqw;
+  bottom: 9.1cqw;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 22px 0 0 6px;
-  font-size: 11px;
+  gap: 0.6cqw;
+  font-size: 2.85cqw;
   font-weight: 700;
   letter-spacing: 0.08em;
   opacity: 0.9;
@@ -177,7 +151,7 @@ defineProps<{
 
 .reference-tourist-card__footer strong {
   display: block;
-  font-size: 22px;
+  font-size: 7cqw;
   line-height: 1;
   letter-spacing: -0.04em;
 }
